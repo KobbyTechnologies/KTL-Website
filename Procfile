@@ -1,0 +1,1 @@
+web: gunicorn KTL.wsgi --log-file -
