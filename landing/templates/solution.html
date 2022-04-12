@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}KTL - Solution {% endblock title %}
+{% block main %}
+{% include 'navbar.html' %}
+
+<section class="solution container">
+    <div class="sl-title">
+        <h1>Our solutions</h1>
+    </div>
+    <div class="row sl-items">
+        <div class="col-7">
+            <div class="sl-content">
+                <h5 class="sl-fade">RECENT SOLUTION</h5>
+                <h3>Electronic Documents Management System (EDMS)</h3>
+                <p>At Kobby technologies we offer this solution through standardizing your information management
+                    practices
+                    between department such that there is a seamless flow of information across the organization. We
+                    also
+                    implement EDMS software to support your digital transformation projects.
+                    View Solution
+                    This is the solution title holder
+                    View Solution</p>
+
+                <div class="sl-link">
+                    <a href="#">View Solution <span class="la la-angle-right"></span>
+                        <hr>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-5 sl-image">
+            <img src="{% static 'img/sl-1.jpg' %}" alt="picture">
+        </div>
+    </div>
+</section>
+
+<section class="container sl-all-solutions">
+    <div class="sl-title">
+        <h1>All solutions</h1>
+    </div>
+    <div class="row sl-card">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center flex-box">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="#" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="#" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="#" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="#" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="sl-icon">
+                        <span><i class="lab la-ethereum"></i></i></span>
+                    </div>
+                    <h3 class="card-title">This is the solution title holder</h3>
+                    <a href="#" class="btn btn-primary btn-lg">View Solution</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row sl-page container">
+        <div class="text-center">
+            <a href="" class="btn btn-outline-primary btn-lg">Previous</a>
+            <a href="" class="btn btn-outline-primary btn-lg "> Next</a>
+        </div>
+        
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% endblock main %}
