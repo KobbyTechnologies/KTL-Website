@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="row my-4" style="background: blue;">
+        <div class="col-md-4">
+            <img src="../../static/img/2.png" id="testIMg" class="img-fluid" alt="" srcset="">
+        </div>
+        <div class="col-md-5">
+            <h5>
+                About Natalie
+            </h5>
+            <p>bvsdadsbhjdshjsdfjhdfshjfsabhjfsajhcsdfaghdsfagjdfgujfdjgudfjudfhudjhdjdjg</p>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" href="{% url 'index' %}">Go Home</a>
+        </div>
+    </div>
+    <div class="row" style="background: green;">
+        <div class="col-md-6">
+            <div class="card test">
+                <div class="card-title">
+                    Francis
+                </div>
+                <div class="card-body">
+                    <p>I want to learn Python today</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="alert alert-success test" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit
+                    longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
