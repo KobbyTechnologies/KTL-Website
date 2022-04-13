@@ -1,0 +1,196 @@
+/*================ 
+solutions section
+===================*/
+
+
+.solution { 
+    margin: auto;
+    overflow: hidden;
+}
+.solution .sl-items{
+    background-color: white;
+    color: black;
+
+}
+.solution .sl-content{
+    margin: 40px;
+}
+.solution .sl-image img{
+    
+    width: auto;
+    height:100;
+    margin:  auto; 
+}
+.sl-title{
+    margin: 39px 0 39px 0;
+    font-size: larger;
+}
+.solution .sl-fade{
+    font-size: medium;
+    color:  #A2A2A3;
+    margin: 39px 0 27px 0;
+}
+.solution .sl-content h4{
+    margin-bottom: 30px;
+}
+
+.solution .sl-content p{
+    margin-bottom: 24px;
+    font-size: larger;
+}
+
+.solution .sl-content .sl-link a{
+    color: #E64143;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.solution .sl-content .sl-link a hr{
+   font-weight: bold;
+   width: 20%;
+   height: 2px;
+   color: #E64143;
+}
+
+
+.sl-all-solutions{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.sl-all-solutions .card{
+    color: #0D0D0D;
+    margin: 39px 0 0 0;
+    
+    
+}
+
+.sl-all-solutions .card .card-title{
+    margin: auto;
+    padding: 60px 0;
+    /* font-size: xx-large; */
+    color: #0D0D0D;
+    font-weight: 700;
+    Size: 24px;
+    Line-height:32.74px;
+    
+    
+}
+
+.sl-all-solutions .sl-card .btn{
+    background-color: #E64143;
+    border: #E64143;
+    margin: auto;
+    width: 100%;
+}
+
+.sl-all-solutions  .btn a{
+    margin: 1rem;
+}
+
+.sl-page{
+    text-align: center;
+}
+
+.sl-page .btn{
+    color: white;
+    border-color: white;
+    margin: 40px;
+}
+.sl-page .btn:hover{
+    background-color: #E64143;
+    border:0 ;
+}
+.sl-icon i{
+    font-size: 150px;
+}
+/* =====================
+end of solutions section 
+========================*/
+
+/*======================== 
+Single solutions section 
+==========================*/
+
+.sl-title-single{
+    background: url(../img/sl-2.jpg) no-repeat ;
+    background-size: cover ;
+    height: 100vh;
+}
+
+.sl-title-single h1{
+    background-color: rgb(13, 13, 13, .5);
+    height: 100vh;
+    padding-top: 40vh;
+    padding-left: 7vw;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+
+.sl-single-items{
+    margin: 50px;
+}
+
+.sl-single-items h1{
+    margin: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.sl-single-items p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.sl-single-items h4{
+    color: #A2A2A3;
+    margin: 47px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.sl-single-items .sl-product-list li{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 24px;
+    
+}
+
+.sl-single-items .sl-product-list ul{
+    text-decoration: none;
+    
+}
+
+.sl-products{
+    color: #0D0D0D;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.sl-patners-title, .sl-experience-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 3rem 0 2.5rem 0;
+    padding: 1em;
+}
+
+/*===============================
+ end of single solutions section 
+ ================================*/
