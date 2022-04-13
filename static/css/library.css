@@ -1,0 +1,16 @@
+.library .lb-title{
+    padding: 20px 0 60px 0;
+}
+
+.library .btn {
+    border-color: #E64143 !important;
+    color: #E64143 !important;
+}
+.library .btn:hover {
+    background-color: #E64143 !important;
+    color: #FFF !important;
+}
+
+.library .figure{
+    background-color: #000000;
+}
