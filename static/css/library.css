@@ -11,6 +11,61 @@
     color: #FFF !important;
 }
 
-.library .figure{
+
+
+.library .lb-video-overlay{
+    position: relative;
     background-color: #000000;
 }
+
+
+
+.story .story-title h1{
+    padding: 100px 0 45px 0;
+}
+
+.story .story-content p{
+    padding: 0 0 30px 0;
+    
+}
+
+.story .story-content .story-quote p{
+    padding: 0 25px;
+    
+}
+
+.story .story-content .story-quote{
+    margin: 25px 0;
+    padding: 25px 0;    
+}
+
+
+
+
+.lb-csr-landing {
+    /* background: url(../../static/img/lb-2.jpg); */
+    background: url("{% static 'img/lb-2.jpg' %}") center no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.lb-csr-title {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.lb-program-offer {
+    color: black;
+    background-color: white;
+
+}
+
+.lb-program-offer h5 {
+    color: #E64143;
+}
+
+.lb-program-offers {
+    height: 30vh;
+}
+

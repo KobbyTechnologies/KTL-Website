@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}library {% endblock title %}
+{% block title %}Success Stories {% endblock title %}
 {% block main %}
 <div class="container library">
     <div class="lb-title">
@@ -16,10 +16,14 @@
             <a href="" class="btn btn-outline-primary"> Read Story</a>
         </div>
         <div class="col-4">
-            <figure class="figure">
+            <div class="lb-video">
+
                 <img src="{% static 'img/lb-1.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 <!-- <figcaption class="figure-caption">Lorem Ipsum dolor sit amet, consectetur. Lorem Ipsum dolor sit amet, consectetur.</figcaption> -->
-            </figure>
+                <div class="lb-video-overlay container-fluid">
+                    <span><i class="fa-solid fa-circle-play"></i></span>
+                </div>
+            </div>
             <p>Lorem Ipsum dolor sit amet, consectetur. Lorem Ipsum dolor sit amet, consectetur.</p>
             <a href="" class="btn btn-outline-primary"> Watch Story</a>
         </div>
