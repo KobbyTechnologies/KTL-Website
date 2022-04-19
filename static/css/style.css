@@ -1,3 +1,11 @@
-.btnGhost {
+/* .btnGhost {
     background: yellow;
+} */
+body{
+    color: white;
+    background: black;
+}
+footer .footer{
+    color: white;
+    background : black;
 }

@@ -1,3 +1,47 @@
-<h5>
-    This is the footer
-</h5>
+{% extends 'base.html'%} 
+{% load static %}
+{% block main %}
+<footer class="footer">
+<hr> 
+<div class="row">
+    <div class="col-sm-3">
+        <div>
+            <img src="../../static/img/2.png" class="img-fluid" width="140" height="140" alt=""></a>
+        </div>
+      </div>
+    <div class="col-sm-2">
+          <h5>Contact info</h5>
+          <p>+254711111111</p>
+          <p> info@kobby.co.ke</p>
+    </div>
+    <div class="col-sm-2">
+            <h5>Address</h5>
+            <p >P.O Box 5824-00200</p>
+            <p >Nairobi, Kenya</p>
+      </div>
+      <div class="col-sm-2">
+            <h5 >Location</h5>
+            <p >The Mirage, 5th Floor -</p>
+            <p >Suite 4 Westlands</p>
+        </div>
+      <div class="col-sm-2">
+            <h5 >Navigate</h5>
+            <p >Home</p>
+            <p >Our Sevices</p>
+            <p >About Us</p>
+            <p >Our Library</p>
+            <p >Contact Us</p>
+        </div>
+  </div>
+<hr>
+  <div class="row justify-content-center"> 
+    <!-- <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-linkedin"></ion-icon> -->
+    <div class="col-1"><i class="fa-brands fa-facebook text-center"></i></div>
+    <div class="col-1"><i class="fa-brands fa-twitter text-center"></i></div>
+    <div class="col-1"><i class="fa-brands fa-linkedin text-center"></i></div>
+    <div class="col-12"><p class="text-center">Copyright @ 2022 Kobby Technologies Limited. All Rights Reserved.</p></div>
+  </div>
+</footer>
+{%endblock%}
