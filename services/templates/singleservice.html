@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+{% include 'navbar.html' %}
+<<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Microsoft solution</h5>
+        
+        <a href="#" class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Oracle solution</h5>
+        
+        <a href="#" class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Technical solution consulting</h4>
+          
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+
+          <h4 class="card-title">Outsourced services</h4>
+          
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <!--line break and microsoft content-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="count">
+          <hr>
+        <h4>microsoft solution</h4>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="count">
+          <h4>microsoft solution</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minus dignissimos minima doloremque dolor veritatis, blanditiis quaerat iste, culpa molestias dolore suscipit aut, debitis ducimus necessitatibus commodi fugit nesciunt velit.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="count">
+    <h1> values we offer in our busines</h1> <!--center the text-->
+  </div>
+ 
+  {% include 'footer.html' %}
+{% endblock %}
