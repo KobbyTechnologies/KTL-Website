@@ -1,6 +1,7 @@
-/* .btnGhost {
-    background: yellow;
-} */
+.btn {
+    background: #E64143;
+    font-style: text-white;
+} 
 body{
     color: white;
     background: black;
@@ -8,4 +9,15 @@ body{
 footer .footer{
     color: white;
     background : black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
