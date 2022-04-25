@@ -4,27 +4,268 @@
     --font1: 'Nunito', sans-serif;
     --white1:#FFFFFF;
     --white2:#C4C4C4;
+    --black: #000;
+    --red:#E64143;
 }
 .about1{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .about-start h3{
     font-family: var(--font1);
     font-weight: 700;
-    font-size: 72px;
-    line-height: 98px;
+    font-size: 40px;
+    line-height: 55px;
     color: var(--white1);
     font-style: normal;
 }
 .about-start p{
     font-family: var(--font1);
     font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 18px;
+    line-height: 25px;
     color: var(--white2);
     font-style: normal;
 }
 .about-img img{
-    width: 703px;
-    height: 405px;
+    width: 495px;
+    height: 285px;
 }
+
+/* Section 2 */
+.about2 {
+    margin-top: 6rem;
+}
+.about-card{
+    background: var(--white1);
+    border-radius: 5px;
+    width: 280px;
+    height: 254px; 
+  
+}
+.aboutCardHeader h4{
+    margin-top: 1.2rem;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black);
+}
+.aboutcard-body p{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 2rem;
+}
+.structure{
+    margin-top: 6rem;
+    margin-bottom: 4rem !important;
+}
+.section-header h3{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.section-header p{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #C4C4C4;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.sec-structure h4{
+    font-family: var(--font1);
+    padding-top: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    padding-bottom: 6rem;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: url(21398d375e0e5977de20fe4c7e6e1e0c.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.profile img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.vl{
+    border-left: 3px solid var(--red);
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+.Governance li{
+    margin-top: 1rem;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #C4C4C4;
+}
+.team h5{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;  
+    color: #FFFFFF;
+}
+.team p{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;  
+    color: #C4C4C4;
+}
+
+.teamBtn{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.share{
+    height: 258px;
+    background: #FFFFFF;
+    position: relative;
+}
+.section-share h5{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #000000;
+    position: absolute;         
+    top: 50%;                  
+    transform: translate(0, -50%)
+}
+.section-share p{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:25px;
+    color: #000000;
+    position: absolute;         
+    top: 70%;                  
+    transform: translate(0, -70%)
+}
+.cBtn button{
+    background: #E64143;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    top: 50%; 
+    position: absolute; 
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+  }
+  #quote-carousel .carousel-control {
+    background: none;
+    color: #cacaca;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+  }
+  #quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 15px;
+    margin-top: 20px;
+    margin-right: -19px;
+  }
+  #quote-carousel .carousel-indicators li {
+    width: 100px;
+    background:url(../img/about/team/Ellipse\ 56.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.2;
+    overflow: hidden;
+    transition: all 0.4s ease-in;
+    vertical-align: middle;
+  }
+  #quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all 0.2s;
+  }
+  .carousel-item blockquote p{
+    border-left: none;
+    margin: 0;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #C4C4C4;
+    margin-top:1rem;
+    margin-bottom:3rem;
+  }
+  .names {
+    color: #fff !important;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-top:3rem !important;
+  }
+  .carousel-item blockquote p:before {
+    content: "\f10d";
+    font-family: "Fontawesome";
+    float: left;
+    margin-right: 10px;
+  }
+  .carousel-item blockquote p:after {
+    content: "\f10e";
+    font-family: "Fontawesome";
+    margin-right: 10px;
+  }
