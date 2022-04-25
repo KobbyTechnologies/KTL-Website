@@ -1,103 +1,61 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block main %}
-{% include 'navbar.html' %}
-<section class="test" >
-    <div class="content">
-        <h1> kobby technology limited</h1>
-        <p> Below are some of the services we offer</p>
-    </div>
-    
+{% extends 'base.html' %} 
+{% load static %} 
+{% block main %} 
+{% include
+'navbar.html' %}
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+  </div>
 </section>
-<h1> our services </h1>
+<h1>our services</h1>
 <!--cards-->
-<div class="row">
-    <div class="col-sm-3">
+<div class="container">
+  <div class="row" style="row-gap: 16px">
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
       <div class="card">
+        <!--icon-->
         <div class="card-body">
+          <img src="/static/img/solution-1.png" />
           <h5 class="card-title">Microsoft solution</h5>
-          
           <a href="#" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
       <div class="card">
         <div class="card-body">
+          <img src="/static/img/solution-1.png" />
           <h5 class="card-title">Oracle solution</h5>
-          
+
           <a href="#" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Technical solution consulting</h4>
-            
-            <a href="#" class="btn btn-primary">learn more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
 
-            <h4 class="card-title">Outsourced services</h4>
-            
-            <a href="#" class="btn btn-primary">learn more</a>
-          </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card">
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title">Technical solution consulting</h5>
+
+          <a href="#" class="btn btn-primary">learn more</a>
         </div>
       </div>
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card">
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title">Outsourced services</h5>
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+    <hr />
   </div>
 
-
-  <hr>
-
-
-  <!-- contact info-->
-<div class="continer">
-    <div class="row">
-        <div class="col-md-4">
-            <img src= "/static/img/2.png" class="img-fluid" alt="" srcset="">
-        </div>
-        <div class="col-md-3">
-          <div class="count"> 
-            <h4>address</h4>
-            <p>P.O.BOX 5824-00200</p>
-            <h4>Nairobi.Kenya</h4></div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="count"><h4>contact us</h4>
-            <p>+245789123455</p>
-            <p>info@kobby.co.ke</p>  
-          </div>  
-        </div>
-
-        <div class="col-md-2"><hr>
-        <div class="count">
-          <h4>navigate</h4>
-          <p>home</p>
-          <p>services</p>
-          <p>about us</p>
-          <p>contact us</p>
-        </div>
-
-        </div>
-
-    </div>
-</div> 
-
-
-
-
-
-
-<hr>
-
-
-
-{% include 'footer.html' %}
-{% endblock %}
-<!--index.html-->
+  {% endblock %}
+  <!--index.html-->
+</div>
