@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns=[
     path('services',views.service_request, name='services'),
-    path('single', views.single_request, name='single')
+    path('singleservices', views.single_request, name='singleservices'),
 ]

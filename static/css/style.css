@@ -5,8 +5,8 @@
 body{
     background:rgb(13, 13, 13);
     font-family:"nunito", sans-serif;
-    padding: 20px;
     color: white;
+    overflow-x: none;
 }
 footer{
     background-color: rgb(0,0,0);
@@ -15,16 +15,14 @@ footer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 
 .hero{
     height: 100vh;
     width: 100%;
-    background-image:   url(/static/img/background.png);
+    background-image: url(/static/img/background.png);
     background-position: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     position: relative;
 }
 .overlay{
@@ -50,17 +48,17 @@ footer{
     margin: 20px auto;
     font-weight: 600;
     line-height: 25px;
-    font-size: 30px;
+    font-size: 18px;
 }
-h1{
+.Services{
     text-align: center;
     color:#fff;
     padding-top: 50px;
 } 
-.card-title{
+.center-title{
     align-items: center;
 }   
-.card{
+.c-card{
     text-align: center; 
     width: 100%;
     border: 2px solid rgb(12, 12, 12);
@@ -69,26 +67,31 @@ h1{
     color:black;
     /*padding-top: 250px;*/
 }
-.card img{
+.c-card img{
     padding: 44px;
 
 }
-.card h5{
+.c-card h5{
     font-size: 18px;
 }
-.card a{
+.c-card a{
     width: 100%;
     background-color:#fff;
     color: red;
     padding: 15px;
     border-color: red;
+    /*outline-color: rgba(255,0,0,0.2);*/
 }
-.card a:hover{
+.c-card a:hover{
     background-color: red;
     border-color: white;
-
+    color: white;
 } 
-.card:hover{
+.c-card a:focus{
+    box-shadow: none;
+}
+
+.c-card:hover{
     background-color: red;
     color:#fff;
     cursor: pointer;
@@ -97,21 +100,32 @@ h1{
 }
 .count h4{
     
-    margin-top: 100px
+    margin-top: 100px;
+    font-size: 24px;
+}
+.count hr{
+   
+    height: 5px;
+    background-color: red;
+    border: 0 none;
+    width: 75%;
+    
 }
 .count p{
     color:#fff;
     margin-top: 100px;
+    font-size: 18px;
 }
-hr{
+.axis  {
     color:#fff;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 /*need to work on this */
 .vertical-line{
     height: 200px;
     border-left: 1px solid white;
     padding: 1px;
+    margin-bottom: 50px;
 }
 
 /*.section-experienced{
@@ -122,10 +136,15 @@ hr{
 .coco{
     background-color:#fff;
     margin-bottom: 120px;
+    position: relative;
+    
+}
+/*putting the margin bottom */
+.heading{
+    margin-bottom: 30px;
+}
 
-}    
-
-.coco h5{
+.coco .experiences h5{
     text-align: center;
     font-size: 30px;
     color: black;
@@ -137,12 +156,17 @@ hr{
 .client h5{
     text-align: center;
     color:white;
+    font-size: 30px;
+    line-height: 41px;
 
 }
 .client p{
     text-align: center;
     color:white;
     margin-top: 30px;
+    font-size: 18px;
+    line-height: 24.5px;
+
 
 }
 
@@ -150,6 +174,7 @@ hr{
     text-align: center;
     color:white;
     margin-top: 50px;
+    font-size: 30px;
 
 }
 .Discovery p{
@@ -167,12 +192,13 @@ hr{
     border-bottom: 2px solid white;
     outline: none;
     box-shadow: none;
+    border-radius: 0;
 
 }
 .formbtn{
-    background-color: red;
-    border: 1px solid white;
+    background-color: red; 
     color: white;
+    margin-top: 20px;
     
 }
 .formbtn:hover {
@@ -181,6 +207,7 @@ hr{
     color: white;
     box-shadow: none;
 }
+/* work on blog */
 .video img{
     width: 200px;
     height: 60%;
@@ -198,7 +225,36 @@ hr{
     align-items: left;
 
 }
+.play-btn{
+    width: 60px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.experiences h5{
+    margin-top: 20px !important;
 
 
+}
+.values{
+    margin-bottom: 20px;
+}
 
+.values .vector{
+    width: 250px;
+    text-align: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    
 
+}
+.values .vector:last-child{
+    
+    border-right: none;
+
+}
+.values .row{
+    justify-content: center;
+    
+}
