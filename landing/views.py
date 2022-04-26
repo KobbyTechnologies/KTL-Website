@@ -12,5 +12,5 @@ def navbar(request):
 def footer(request):
     return render(request, 'footer.html')
 
-def contactus(request):
+def contact(request):
     return render(request, 'contactus.html')

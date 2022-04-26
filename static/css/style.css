@@ -1,12 +1,16 @@
 .btn {
     background: #E64143;
     font-style: text-white;
+    font-family: nunito;
+    font-size: 18px;
+    align-items: center;
 } 
 body{
     color: white;
     background: black;
+    font-family: 'nunito';
 }
-footer .footer{
+.footer{
     color: white;
     background : black;
 }
@@ -16,8 +20,28 @@ footer .footer{
     box-sizing: border-box;
 }
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    position: absolute;
+    width: 1440px;
+    height: 169px; 
+}
+.cont-form{
+    width: 690px;
+}
+.cont-form .floating-group input[type="text"],input[type="email"],input[type="number"],input[type="text"]{
+    color: white;
+    background-color: rgb(13, 13, 13) !important;
+    border: 0px;
+    border-bottom: 2px solid white;
+    outline: none;
+    box-shadow: none;
+}
+.formbtn{
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+}
+.formbtn:hover {
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
 }

@@ -2,19 +2,117 @@
 {% load static %}
 {% block main %}
 {% include 'navbar.html' %}
-<div class="container">
-    <div style="text-align:left">
-      <h1>Hello, let's get intouch</h1>
-    </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <input type="text" id="fname" name="firstname" placeholder="Your Name"><br></br>
-          <input type="text" id="lname" name="email" placeholder="Your Email Address"><br></br>
-          <input type="subject" name="phone" placeholder="Phone Number"><br></br>
-      <input type="subject" name="message" placeholder="Your message"><br></br>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+  <div class="container" style="background-color: #000000;">
+    <p style="color: white;font-weight: 700;font-size: 32px;font-family: nunito;margin-left: 40px">Hello, let’s get intouch</p>
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    <div class="col-md-6">
+      <input
+      type="email"
+      class="form-control floating-input"
+      id="floatingInput"
+      placeholder="Your Name"
+      style="color: white;
+      background-color: rgb(13, 13, 13) !important;
+      border: 0px;
+      font-weight: 400px;
+      font-size: 18px;
+      font-family: nunito;
+      border-bottom: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      margin-bottom: 40px;
+      margin-left: 40px"
+    />
   </div>
+    <div class="col-md-6">
+      <input
+        type="email"
+        class="form-control floating-input"
+        id="floatingInput"
+        placeholder="Your Email address"
+        style="color: white;
+      background-color: rgb(13, 13, 13) !important;
+      border: 0px;
+      border-bottom: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      font-weight: 400px;
+      font-size: 18px;
+      font-family: nunito;
+      margin-bottom: 40px;
+      margin-left: 40px"
+      />
+    </div>
+    <div class="col-md-6">
+      <input
+      type="text"
+      class="form-control floating-input"
+      id="floatingInput"
+      placeholder="Phone Number"
+      style="color: white;
+      background-color: rgb(13, 13, 13) !important;
+      border: 0px;
+      border-bottom: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      font-weight: 400px;
+      font-size: 18px;
+      font-family: nunito;
+      margin-bottom: 40px;
+      margin-left: 40px"
+    />
+  </div>
+  <div class="">
+    <div class="col-md-6">
+      <input
+      type="text"
+      class="form-control floating-input"
+      id="floatingInput"
+      placeholder="Message"
+      style="color: white;
+      background-color: rgb(13, 13, 13);
+      border: 0px;
+      border-bottom: 2px solid white;
+      outline: none;
+      box-shadow: none;
+      font-weight: 400px;
+      font-size: 18px;
+      font-family: nunito;
+      margin-bottom: 40px;
+      margin-left: 40px;"
+    />
+  </div>
+</div>
+</div>
+</form>
+<div class="button">
+  <a href="#" class="btn" role="button" 
+  style="background-color: #E64143;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 192px;
+  height: 60px;
+  font-size: 18px;
+  font-family: nunito;
+  font-weight: 700px;
+  align-content: center;
+  margin-left: 40px" 
+  text-white>Submit</a>
+</div>
+</div>
+<div class="container">
+  <div class="card col-md-6">  
+    <h4 style="font-weight: 700; font-size: 30px;color:#000000;font-family:nunito;"><b>Talk to Us</b></h4>
+    <p style="font-family:nunito;font-weight: 400;font-size: 18px;color: #797B7E;">+254 724 856614</p>
+    <p style="font-family:nunito;font-weight: 400;font-size: 18px;color: #797B7E;">info@kobby.co.ke</p>
+    <h4 style="font-weight: 700;font-family: nunito; font-size: 30px;color:#000000;"><b>Visit Us </b></h4>
+    <p style="font-family:nunito;font-weight: 400;font-size: 18px;color: #797B7E;">The Mirage , 5th Floor - Suite 4 Westlands</p>
+    
+  </div>
+</div>
+</contact>
   {% include 'footer.html' %}
   {% endblock %}
