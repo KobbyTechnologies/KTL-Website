@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Events & Webinars {% endblock title %}
+
+{% block main %}
+
+<div class="container library gallery">
+    <div class="lb-events">
+        <div class="lb-events-title">
+            <h1>Gallery</h1>
+        </div>
+        <div class="row justify-content-left">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+            </div>
+           
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/events.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/events.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+            </div>
+           
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+            </div>
+           
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/gallery-1.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+            
+            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                <figure class="figure">
+                    <img src="{% static 'img/events.jpg' %}" class="figure-img img-fluid rounded" alt="..."> 
+                </figure>
+            </div>
+        </div>
+        <div class="row sl-page container justify-content-center">
+            <div class=" col-lg-2 col-sm-3 col-6 text-center">
+                <a href="" class="btn btn-outline-primary btn-md">Previous</a>
+            </div>
+            <div class=" col-lg-2 col-sm-3 col-6 text-center">
+                <a href="" class="btn btn-outline-primary btn-md "> Next</a>
+            </div>
+    
+        </div>
+    </div>
+
+</div>
+{% endblock main %}

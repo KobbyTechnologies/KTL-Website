@@ -234,6 +234,15 @@ CSR Details
 }
 
 
+.lb-stories{
+    padding: 1rem;
+}
+
+.gallery.library .btn {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
 @media(max-width: 1200px){
 
     .lb-csr .card .card-body p {

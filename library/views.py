@@ -19,3 +19,9 @@ def csr_view(request):
     
 def csr_detail_view(request):
     return render(request, 'csr-detail.html')
+
+
+def gallery_view(request):
+    return render(request, 'gallery.html')
+
+
