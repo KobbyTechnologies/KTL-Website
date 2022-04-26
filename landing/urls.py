@@ -1,9 +1,13 @@
+from unicodedata import name
 from django.urls import path
 from . import views
 
 
 urlpatterns = [
     path('', views.landing, name='index'),
-    path('about', views.about_us, name='about'),
+    path('navbar/', views.navbar, name='navbar'),
+    path('footer/', views.footer, name='footer'),
+    path('contactus/', views.contact, name='contact')
+
 ]
 

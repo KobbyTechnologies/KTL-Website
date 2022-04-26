@@ -24,7 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY ="dnhsahshjdshjbsfjbjbdabjsajgsabkjkjsdsjgsdbkjdvjksadfigk"
+=======
+SECRET_KEY = 'fadegadget'
+>>>>>>> Natalie
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -122,6 +126,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Email Settings
+<<<<<<< HEAD
 # DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 # EMAIL_BACKEND = config('EMAIL_BACKEND')
 # EMAIL_USE_TLS = config('EMAIL_USE_TLS')
@@ -129,6 +134,15 @@ USE_TZ = True
 # EMAIL_PORT = config('EMAIL_PORT')
 # EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 # EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+=======
+#DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+#EMAIL_BACKEND = config('EMAIL_BACKEND')
+#EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+#EMAIL_HOST = config('EMAIL_HOST')
+#EMAIL_PORT = config('EMAIL_PORT')
+#EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+#EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+>>>>>>> Natalie
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
