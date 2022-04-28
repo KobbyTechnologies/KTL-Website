@@ -21,6 +21,7 @@ urlpatterns = [
     path('', include('landing.urls')),
     path('', include('solution.urls')),
     path('', include('library.urls')),
-    path("",include('services.urls')),
     path("",include('about.urls')),
+    path('', include('services.urls')),
+    path('',include('Blog.urls')),  
 ]

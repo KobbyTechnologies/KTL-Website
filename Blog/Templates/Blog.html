@@ -1,0 +1,61 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block main %} 
+{% include 'navbar.html' %}
+<!--do the image layout-->
+
+<div class="blog">
+    <img src="/static/img/blog.png">
+</div>
+<div class="Discovery">
+    <h5>Lorem ipsum dolor sit amet, consectetur</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.</p>
+</div>
+<div class="horizontal-text">
+    <!--work on this-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="vertical-line"></div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="video">
+                    <p>A netus platea ultrices  A netus platea ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="info">
+    <p>A netus platea ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.</p>
+</div>
+
+<!-- research   work on the  video-->
+<div class="posts">
+    <h5>Other blog posts</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="video">
+                    <img src="/static/img/video.png ">
+                    <img src="/static/img/play.png" class="play-btn  width10px;">
+                    <p>A netus platea ultrices orci adipiscing non a nec.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="video">
+                    <img src="/static/img/video.png ">
+                    <img src="/static/img/play.png" class="play-btn  width10px;">
+                    <p>A netus platea ultrices orci adipiscing non a nec.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="axis">
+
+
+{% endblock %}

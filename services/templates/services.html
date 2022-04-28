@@ -1,0 +1,62 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block main %} 
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+  </div>
+</section>
+<h1 class="Services">Our Services</h1>
+<!--cards-->
+<div class="container">
+  <div class="row" style="row-gap: 16px">
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card c-card">
+        <!--icon-->
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title center-title">Microsoft solution</h5>
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card  c-card">
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title center-title">Oracle solution</h5>
+
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card  c-card">
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title center-title">Technical solution consulting</h5>
+
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-9">
+      <div class="card  c-card">
+        <div class="card-body">
+          <img src="/static/img/solution-1.png" />
+          <h5 class="card-title center-title">Outsourced services</h5>
+          <a href="#" class="btn btn-primary">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr class="axis">
+
+
+  {% endblock %}
+  <!--index.html-->
+</div>
