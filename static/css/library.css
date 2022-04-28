@@ -17,8 +17,24 @@
 
 
 .library .lb-video-overlay{
-    position: relative;
-    background-color: #000000;
+    position: absolute;
+    background-color: #000000bd;
+    height: 97%;
+    top: 0;
+    left: 0;
+}
+
+.library .lb-video-overlay i{
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    width: 50px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.library .lb-video-overlay i:hover{
+    color: #E64143;
 }
 
 
@@ -285,11 +301,22 @@ CSR Details
         padding: 5px;
         width: 100%;
     }
+
+    .library .lb-video-overlay i{
+        top: 33%;
+        left: 40%;
+        font-size: 35px;
+    }
 }
 
 @media(max-width:768px) {
     i {
         padding: 0.8rem
+    }
+    .library .lb-video-overlay i{
+        top: 25%;
+        left: 33%;
+        font-size: 35px;
     }
 }
 
@@ -297,7 +324,11 @@ CSR Details
     .csr-button button{
         margin: 5rem 1rem;
     }
-   
+    .library .lb-video-overlay i{
+        top: 25%;
+        left: 33%;
+        font-size: 35px;
+    }
 }
 
 
