@@ -1,3 +1,12 @@
+:root {
+    --font1: 'Nunito', sans-serif;
+    --white1:#FFFFFF;
+    --white2:#C4C4C4;
+    --black: #000;
+    --red:#E64143;
+    --black: #0D0D0D;
+
+}
 .library .lb-title{
     padding: 20px 0 ;
 }
@@ -72,16 +81,24 @@
 }
 
 .lb-csr-landing {
-    /* background: url(../../static/img/lb-2.jpg); */
     background: url('../img/events.jpg') center no-repeat !important;
-    /* background-size: cover; */
     height: 100vh;
+    background-size:cover;
+    background-position: center;
 }
 
 .lb-csr-title {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
+}
+.lb-csr-title h1{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white1);
 }
 
 .lb-csr-program h1{
@@ -93,7 +110,6 @@
 .lb-csr-program p{
     font-size: 18px;
 }
-
 
 .lb-program-offer {
     color: black;
