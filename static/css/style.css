@@ -11,18 +11,15 @@ body{
 footer{
     background-color: rgb(0,0,0);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .hero{
     height: 100vh;
     width: 100%;
     background-image: url(/static/img/background.png);
-    background-position: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 .overlay{
@@ -46,14 +43,15 @@ footer{
 
 .content p{
     margin: 20px auto;
-    font-weight: 600;
-    line-height: 25px;
-    font-size: 18px;
+    font-weight: 700;
+    line-height: 41px;
+    font-size: 30px;
 }
 .Services{
     text-align: center;
     color:#fff;
     padding-top: 50px;
+    padding-bottom: 50px;
 } 
 .center-title{
     align-items: center;
@@ -122,7 +120,7 @@ footer{
 }
 /*need to work on this */
 .vertical-line{
-    height: 200px;
+    height: 200px;                                                /*  Add padding-top to single service page just before the cards   2 Fix the divs on single-service under values we over*/
     border-left: 1px solid white;
     padding: 1px;
     margin-bottom: 50px;
@@ -179,6 +177,7 @@ footer{
 }
 .Discovery p{
     color:white;
+    text-align: center;
 
 }
 .cont-form{
@@ -197,7 +196,9 @@ footer{
 .formbtn{
     background-color: red; 
     color: white;
-    margin-top: 20px;
+    margin-top: 50px;
+    width: 250px;
+
     
 }
 .formbtn:hover {
