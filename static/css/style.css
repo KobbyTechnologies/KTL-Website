@@ -1,3 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 .btnGhost {
     background: yellow;
+}
+body{
+    background:rgb(13, 13, 13);
+    font-family:"nunito", sans-serif;
+    color: white;
+    overflow-x: none;
+}
+footer{
+    background-color: rgb(0,0,0);
+}
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/static/img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 700;
+    line-height: 41px;
+    font-size: 30px;
+}
+.Services{
+    text-align: center;
+    color:#fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} 
+.center-title{
+    align-items: center;
+}   
+.c-card{
+    text-align: center; 
+    width: 100%;
+    border: 2px solid rgb(12, 12, 12);
+    padding: 10px;
+    height: 100%;
+    color:black;
+    /*padding-top: 250px;*/
+}
+.c-card img{
+    padding: 44px;
+
+}
+.c-card h5{
+    font-size: 18px;
+}
+.c-card a{
+    width: 100%;
+    background-color:#fff;
+    color: red;
+    padding: 15px;
+    border-color: red;
+    /*outline-color: rgba(255,0,0,0.2);*/
+}
+.c-card a:hover{
+    background-color: red;
+    border-color: white;
+    color: white;
+} 
+.c-card a:focus{
+    box-shadow: none;
+}
+
+.c-card:hover{
+    background-color: red;
+    color:#fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease; 
+}
+.count h4{
+    
+    margin-top: 100px;
+    font-size: 24px;
+}
+.count hr{
+   
+    height: 5px;
+    background-color: red;
+    border: 0 none;
+    width: 75%;
+    
+}
+.count p{
+    color:#fff;
+    margin-top: 100px;
+    font-size: 18px;
+}
+.axis  {
+    color:#fff;
+    margin-top: 80px;
+}
+/*need to work on this */
+.vertical-line{
+    height: 200px;                                                /*  Add padding-top to single service page just before the cards   2 Fix the divs on single-service under values we over*/
+    border-left: 1px solid white;
+    padding: 1px;
+    margin-bottom: 50px;
+}
+
+/*.section-experienced{
+    background-color:#fff;
+
+}*/
+
+.coco{
+    background-color:#fff;
+    margin-bottom: 120px;
+    position: relative;
+    
+}
+/*putting the margin bottom */
+.heading{
+    margin-bottom: 30px;
+}
+
+.coco .experiences h5{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.white img{
+    width: 100px;
+    height: 100px;
+}
+.client h5{
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    line-height: 41px;
+
+}
+.client p{
+    text-align: center;
+    color:white;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 24.5px;
+
+
+}
+
+.Discovery h5{
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+.Discovery p{
+    color:white;
+    text-align: center;
+
+}
+.cont-form{
+    width: 690px;
+}
+.cont-form .floating-group input[type="text"],input[type="email"],input[type="number"],input[type="text"]{
+    color: white;
+    background-color: rgb(13, 13, 13) !important;
+    border: 0px;
+    border-bottom: 2px solid white;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+
+}
+.formbtn{
+    background-color: red; 
+    color: white;
+    margin-top: 50px;
+    width: 250px;
+
+    
+}
+.formbtn:hover {
+   
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
+}
+
+.info h5{
+    align-items: left;
+
+}
+
+.experiences h5{
+    margin-top: 20px !important;
+
+
+}
+.values{
+    margin-bottom: 20px;
+}
+
+.values .vector{
+    width: 250px;
+    text-align: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    
+
+}
+.values .vector:last-child{
+    
+    border-right: none;
+
+}
+.values .row{
+    justify-content: center;
+    
+}
+/* working on the videos */
+
+
+
+.cloud{
+    display: flex;
+    align-items: right;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 33.33%;
+    min-width: 50px;
+}
+
+.feature-img{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+.video-player{
+   
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+   display: none;
+   place-items: center;
+    
+    
+}
+.video-player .video{
+    width: 80%;
+   max-width: 500px;
+    position: relative;
+}
+
+.video-player .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+video:focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* BLOG2 */
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.three::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.three img{
+ border-radius: 6px;
+}
+.three h4, 
+.cloud h4{
+    margin-top: 10px !important;
+}
+/* blog */
+.blog-img{
+    width: 100%;
+    object-fit: cover;
+}
+.blogbtn{
+    background-color: rgb(15, 15, 15); 
+    color: rgb(216, 215, 215);
+    margin-top: 20px;
+    border-color: red;
+    
+    
+}
+.blogbtn:hover {
+   
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
+}
+.blog-header{
+    width: max-content;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 10px;
+
+}
+.blog-header .vertical-line{
+    height: 100%;
+    opacity: 0.5;
+}
+.blog-header  p{
+    opacity: 0.6;
+    margin: 0;
+}
+.horizontal-text{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+.horizontal-text .vertical-line{
+    height: 120px;
+    margin: 0;
+
+}
+.horizontal-text p{
+    margin: 10px 0;
 }
