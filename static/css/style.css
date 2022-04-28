@@ -17,6 +17,11 @@ footer{
     height: 100vh;
     width: 100%;
     background-image: url(/static/img/background.png);
+<<<<<<< HEAD
+=======
+    background-position: center;
+    background-size: cover;
+>>>>>>> 29fba2f3cc7974ed25d6ccc3d5798ded083e0fa3
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,8 +34,6 @@ footer{
     height: 100%;
     width: 100%;
     top: 0;
-
-
 }
 .content{
     width: 100%;
@@ -196,10 +199,11 @@ footer{
 .formbtn{
     background-color: red; 
     color: white;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 250px;
-
-    
+    height: 60px;
+    font-weight: 700;
+    font-size: 18px;
 }
 .formbtn:hover {
    
@@ -335,7 +339,7 @@ video:focus{
 .blogbtn{
     background-color: rgb(15, 15, 15); 
     color: rgb(216, 215, 215);
-    margin-top: 20px;
+    margin-top: 10px;
     border-color: red;
     
     

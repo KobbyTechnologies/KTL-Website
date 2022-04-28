@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Read More {% endblock title %}
+
+{% block main %}
+
+<style>
+    .rm-landing {
+        background: url(../../static/img/library.jpg) center no-repeat;
+        /* background: url('//picsum.photos/1400?tech=1') center no-repeat; */
+        background-size: cover;
+        height: 100vh;
+    }
+</style>
+
+
+<div class="container-fluid story">
+    <div class="rm-landing">
+        <!-- 
+            - This area contains the background image for the stories section
+            - Embeded css is used for ewsy customization and edditing of the picture used in the background
+        -->
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="text-center col-lg-8 col-md-10 col-sm-11 col-11 story-title ">
+            <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+        </div>
+
+        <div class="row justify-content-center col-lg-8 col-md-10 col-sm-11 col-11 story-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                A netus platea ultrices orci adipiscing non a nec.
+                Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu.
+                Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis
+                senectus
+                blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                A netus platea ultrices orci adipiscing non a nec.
+                Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu.
+                Nulla orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci sagittis
+                senectus
+                blandit et leo varius. Amet pretium interdum purus porttitor elit egestas quisque sagittis.
+            </p>
+            <div class="container border-start border-3 col-11 d-flex align-items-center story-quote">
+                <div class=" row justify-content-center">
+                    <p class="col-11"><em>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea ultrices orci
+                            adipiscing non
+                            a nec. Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam dignissim
+                            eu.
+                        </em>
+                    </p>
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea ultrices orci adipiscing non a
+                nec. Id etiam purus sed scelerisque lectus eu et. Amet pretium interdum purus porttitor elit egestas
+                quisque sagittis.
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock main %}

@@ -1,0 +1,308 @@
+.library .lb-title{
+    padding: 20px 0 ;
+}
+.library .lb-title h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 41px;
+}
+
+.library .btn {
+    border-color: #E64143 !important;
+    color: #E64143 !important;
+}
+.library .btn:hover {
+    background-color: #E64143 !important;
+    color: #FFF !important;
+}
+
+
+
+.library .lb-video-overlay{
+    position: relative;
+    background-color: #000000;
+}
+
+
+
+.story .story-title h1{
+    padding: 45px 0;
+}
+
+.story .story-content p{
+    padding: 0 0 30px 0;
+    
+}
+
+.story .story-content .story-quote p{
+    padding: 0 25px;
+    
+}
+
+.story .story-content .story-quote{
+    margin: 25px 0;
+    padding: 25px 0;    
+}
+
+
+.lb-csr{
+    color: #000000;
+}
+
+.lb-csr .card{
+    margin: 1rem 0;
+    padding: 1rem;
+    /* width: 250px; */
+}
+
+.lb-csr .card .card-body img{
+    padding: 44px !important;
+}
+
+.lb-csr .card .card-body p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.lb-csr .card .card-body .btn{
+    padding: 0.7rem;
+    width: 80%;
+    font-weight: bold;
+
+}
+
+.lb-csr-landing {
+    /* background: url(../../static/img/lb-2.jpg); */
+    background: url('../img/events.jpg') center no-repeat !important;
+    /* background-size: cover; */
+    height: 100vh;
+}
+
+.lb-csr-title {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.lb-csr-program h1{
+    font-size: 24px;
+    padding-top: 110px;
+    padding-bottom: 14px;
+}
+
+.lb-csr-program p{
+    font-size: 18px;
+}
+
+
+.lb-program-offer {
+    color: black;
+    background-color: white;
+
+}
+
+.lb-program-offer h5 {
+    color: #E64143;
+}
+
+/* .lb-program-offers {
+    height: 10em;
+
+} */
+
+.lb-events-title{
+    margin: 3.4rem 0;
+}
+.lb-events-title h3{
+    font-size: 20px;
+}
+
+
+.lb-events-title form input{
+    background: none;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #5B5A5A;
+    ;
+}
+
+.lb-events-title form button .btn{
+    width: 100%;
+}
+
+
+/**************************************** 
+CSR Details
+****************************************/
+
+#myCarousel {
+    /* background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%); */
+    /* max-width: 900px; */
+    margin: auto
+}
+
+#myCarousel .csr-icon i{
+ padding: 12px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: #E64143;
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+
+
+.csr-icon{
+    background-color: rgb(223 56 89 / 65%);
+    height: 39px;
+    width: 39px;
+    border-radius: 100%;
+}
+
+#myCarousel i {
+    padding: auto;
+}
+
+.lb-csr-program form{
+    margin: 5rem 0;
+}
+
+.csr-input{
+    background: none;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.fileInput {
+    /* text-align: right; */
+    border-bottom: thin solid #fff;
+    padding: 6px 0;
+    margin: 3px;
+}
+.fileInput input{
+    display: none;
+}
+.fileInput label{
+    cursor: pointer;
+    width: 100%;
+}
+.fileInput #imageName{
+    color: #E64143;
+}
+
+.csr-button button{
+    background-color:#E64143;
+    border: none;
+    margin: 7rem;
+    padding: 0.5em 3em;
+    font-size: 18px;
+}
+
+.csr-button button .btn:hover{
+    background-color: #00000000;
+    border: 1px solid #ffff;
+}
+
+
+.lb-stories{
+    padding: 1rem;
+}
+
+.gallery.library .btn {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+@media(max-width: 1200px){
+
+    .lb-csr .card .card-body p {
+        padding: 1.5rem 0;
+    }
+
+    .lb-csr .card .card-body img {
+        padding: 25px;
+    }
+
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+
+    .lb-csr .card{
+        margin: 0;
+        padding: 0;
+        /* width: 250px; */
+    }
+
+    .lb-csr .card .card-body img {
+        padding: 10px !important;
+    }
+
+    .lb-csr .card .card-body p {
+        padding: 0;
+    }
+
+    .lb-csr .card .card-body .btn {
+        padding: 5px;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+@media(max-width:425px) {
+    .csr-button button{
+        margin: 5rem 1rem;
+    }
+   
+}
+
+
+
+
+
