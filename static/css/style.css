@@ -1,10 +1,25 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 body{
+<<<<<<< HEAD
     background-color:#0d0d0d;
     color: white;
 
 }
 .btnGhost {
+=======
+    background: #000;
+}
+
+.test{
+>>>>>>> 791066a8a8c21f94f8e2dafeb5c8c8d2c9ba55d0
     background: yellow;
+    margin-top: 2rem;
+    border: 2px solid red;
+}
+#testIMg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
