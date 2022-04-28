@@ -1,10 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-body{
-    background: #000;
+.btnGhost {
+    background: yellow;
 }
-
 .test{
     background: yellow;
     margin-top: 2rem;
