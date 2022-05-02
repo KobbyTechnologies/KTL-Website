@@ -1,39 +1,110 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
-{% include 'navbar.html' %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 bg-light" style="height: 700px; width: 100%;">
-            <div class="centerd" style="margin-left: 4rem;">
-                <div class="div mt-5" style="display:inline-block;border-right: 2px solid red;">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50" alt="" srcset="">
-                    <p>We are learning some css</p>
+
+<section class="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mx-4" style="display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
+
+            </div>
+            <div class="carousel-item ">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class=" div mx-4" style="display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
+
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class=" div " style=" display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
-                </div>
+
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="fas fa-arrow-left" aria-hidden="true"> </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="fas fa-arrow-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</div>
-<<<<<<< HEAD
-{# {% include 'footer.html' %} #}
+</section>
+<section class="container pt-4 mt-5">
+    <div class="row justify-content-center">
+        <table class="table text-center">
+            <tr>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Clients</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Soutions</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Patners</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</section>
+<hr class="container">
 {% endblock %}
 <!--index.html-->
-=======
-{% endblock %}
->>>>>>> 8134c54ad28ef3a0882d0ae8dbe4ae5737db0505

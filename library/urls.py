@@ -8,5 +8,5 @@ urlpatterns = [
     path('events', views.events, name='events'),
     path('csr', views.csr_view, name='csr'),
     path('csr-detail', views.csr_detail_view, name='csr-detail'),
-    path('gallery/', views.gallery_view, name='gallery'),
+    path('gallery', views.gallery_view, name='gallery'),
 ]
