@@ -63,7 +63,7 @@ footer{
     padding: 10px;
     height: 100%;
     color:black;
-    /*padding-top: 250px;*/
+    margin-top: 10px;
 }
 .c-card img{
     padding: 44px;
@@ -78,7 +78,7 @@ footer{
     color: red;
     padding: 15px;
     border-color: red;
-    /*outline-color: rgba(255,0,0,0.2);*/
+    
 }
 .c-card a:hover{
     background-color: red;
@@ -118,26 +118,21 @@ footer{
     color:#fff;
     margin-top: 80px;
 }
-/*need to work on this */
+
 .vertical-line{
-    height: 200px;                                                /*  Add padding-top to single service page just before the cards   2 Fix the divs on single-service under values we over*/
+    height: 200px;                                                
     border-left: 1px solid white;
     padding: 1px;
     margin-bottom: 50px;
 }
 
-/*.section-experienced{
-    background-color:#fff;
-
-}*/
-
 .coco{
     background-color:#fff;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     position: relative;
     
 }
-/*putting the margin bottom */
+
 .heading{
     margin-bottom: 30px;
     font-size: 30px;
@@ -168,6 +163,13 @@ footer{
     font-size: 18px;
     line-height: 24.5px;font-weight: 400,regular;
 }
+.client ul{
+    width: max-content;
+    margin: 0 auto;
+
+
+
+}
 
 .Discovery h5{
     text-align: center;
@@ -195,7 +197,15 @@ footer{
     outline: none;
     box-shadow: none;
     border-radius: 0;
+    
+   
 
+}
+.cont-form input:focus{
+    color: #fff;
+    box-shadow: none;
+    border-color: white;
+    
 }
 .formbtn{
     background-color: red; 
@@ -231,13 +241,14 @@ footer{
 
 }
 .values{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .values .vector{
     width: 250px;
     text-align: center;
     border-right: 2px solid rgba(255, 255, 255, 0.35);
+    margin-bottom:  10px;
 
 }
 .values .vector:last-child{
@@ -249,7 +260,7 @@ footer{
     justify-content: center;
     
 }
-/* working on the videos */
+
 .posts h5{
     margin-bottom: 30px;
     margin-top: 30px;
