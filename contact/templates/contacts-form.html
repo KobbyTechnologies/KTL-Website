@@ -2,42 +2,39 @@
 {% load static %}
 {% block title %} Contact Us{% endblock title %}
 {% block main %}
-<section class=" section">
-    <div class="">
-        <div class="row mb-5 pb-5 contacts">
-            <div class="col-6 ">
-                <div class="container">
-                    <h1 class="header contacts-form-header mt-5 pt-2">
-                        Hello, let’s get in touch
-                    </h1>
-                </div>
-                <div class="container">
-                    <form action="" class="mt-5 pt-2 contacts-form">
-                        <div class="mb-5">
-                            <label for="InputName" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-5">
-                            <label for="InputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-5">
-                            <label for="phoneNo" class="form-label">Phone Number</label>
-                            <input type="number" class="form-control" id="phoneNo">
-                        </div>
-                        <div class="mb-5">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
-                    </form>
-                </div>
-                
+<div class="container-fluid">
+    <div class="row contacts pt-2 mt-5 pb-5 mt-5">
+        <div class="col-lg-6 col-md-6 col-6 ">
+            <div class="container">
+                <h1 class="header contacts-form-header mt-5 pt-2">
+                    Hello, let’s get in touch
+                </h1>
             </div>
-            <div class="col-6 d-flex flex-row-reverse">
-                <div class="d-flex align-items-center">
-                    <div class="container bg-light form-detail-container-outer">
+            <div class="container">
+                <form action="" class="mt-5 pt-2 contacts-form">
+                    <div class="mb-5">
+                        <label for="InputName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-5">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-5">
+                        <label for="phoneNo" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="phoneNo">
+                    </div>
+                    <div class="mb-5">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-6 d-flex flex-row-reverse">
+            <div class="d-flex align-items-center">
+                <div class="container bg-light form-detail-container-outer">
                     <div class="form-detail-container">
                         <div class="mb-3">
                             <h1 class="header mt-5 pt-2 mb-3">
@@ -51,25 +48,20 @@
                                 Visit us
                             </h1>
                             <p class="mb-3 pb-3">The Mirage , 5th Floor - Suite 4 Westlands</p>
-                        
                         </div>
                         <div class="mb-3 social-icons">
                             <span><i class="fa-brands fa-facebook-square"></i></span>
                             <span><i class="fa-brands fa-twitter-square"></i></span>
                             <span><i class="fa-brands fa-linkedin"></i></i></span>
-                        
                         </div>
                     </div>
-                    
                 </div>
-                </div>
-                
             </div>
         </div>
-        <hr class="mt-5 ">
     </div>
+</div>
 
-</section>
 
+<hr class="container">
 
 {% endblock main %}
