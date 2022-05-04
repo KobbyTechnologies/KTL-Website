@@ -17,11 +17,8 @@ footer{
     height: 100vh;
     width: 100%;
     background-image: url(/static/img/background.png);
-<<<<<<< HEAD
-=======
     background-position: center;
     background-size: cover;
->>>>>>> 29fba2f3cc7974ed25d6ccc3d5798ded083e0fa3
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -143,6 +140,9 @@ footer{
 /*putting the margin bottom */
 .heading{
     margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40.92px;
+    font-weight: 700,bold;
 }
 
 .coco .experiences h5{
@@ -166,9 +166,7 @@ footer{
     color:white;
     margin-top: 30px;
     font-size: 18px;
-    line-height: 24.5px;
-
-
+    line-height: 24.5px;font-weight: 400,regular;
 }
 
 .Discovery h5{
@@ -176,16 +174,19 @@ footer{
     color:white;
     margin-top: 50px;
     font-size: 30px;
+    font-weight: 700,bold;
+    line-height: 40.92px;
 
 }
 .Discovery p{
     color:white;
     text-align: center;
+    font-weight: 400,regular;
+    font-size: 18px;
+    line-height: 24.55px;
 
 }
-.cont-form{
-    width: 690px;
-}
+
 .cont-form .floating-group input[type="text"],input[type="email"],input[type="number"],input[type="text"]{
     color: white;
     background-color: rgb(13, 13, 13) !important;
@@ -212,8 +213,15 @@ footer{
     box-shadow: none;
 }
 
-.info h5{
+.info p{
     align-items: left;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+    color: #C4C4C4;
 
 }
 
@@ -223,14 +231,13 @@ footer{
 
 }
 .values{
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .values .vector{
     width: 250px;
     text-align: center;
     border-right: 2px solid rgba(255, 255, 255, 0.35);
-    
 
 }
 .values .vector:last-child{
@@ -243,9 +250,16 @@ footer{
     
 }
 /* working on the videos */
-
-
-
+.posts h5{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
 .cloud{
     display: flex;
     align-items: right;
@@ -350,31 +364,104 @@ video:focus{
     color: white;
     box-shadow: none;
 }
+
+.horizontal-text{
+    display: flex;
+    align-items: center;
+    
+}
+.horizontal-text .vertical-line{
+    height: 100px;
+    margin: 0 40px;
+    
+
+}
+.horizontal-text p{
+    margin: 20px 0;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #c4c4c4
+    
+}
+.bloggy h5{
+    font-weight: 700,bold;
+    font-size: 48px;
+    line-height: 65.47px;
+    color: white;
+    text-align: center;
+
+}
+.bloggy p{
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+    color: #c4c4c4;
+}
+.blog-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-top .input-group{
+    width: unset;
+
+}
+
+
 .blog-header{
-    width: max-content;
     display: flex;
     gap: 14px;
-    margin-bottom: 10px;
 
 }
 .blog-header .vertical-line{
-    height: 100%;
+    padding: 0;
+    margin: 0;
     opacity: 0.5;
+    height: 50px;
+
 }
 .blog-header  p{
     opacity: 0.6;
     margin: 0;
+    color: #c4c4c4;
 }
-.horizontal-text{
+             /*searchbar css */
+
+
+
+.search-box{
+    width: 340px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 14px;
     display: flex;
-    column-gap: 16px;
     align-items: center;
-}
-.horizontal-text .vertical-line{
-    height: 120px;
-    margin: 0;
+    column-gap: 16px;
 
 }
-.horizontal-text p{
-    margin: 10px 0;
+
+.search-box input[type="text"]{
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}  
+
+.search-box .fa-search{
+    opacity: 0.7;
 }
+
+::-moz-placeholder{
+    color:#fff;
+}
+::-ms-input-placeholder{
+    color: #fff;
+}
+
+
+

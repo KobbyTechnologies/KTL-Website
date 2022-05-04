@@ -1,21 +1,9 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block main %}
-
+{% extends 'base.html' %} {% load static %} {% block main %}
 
 <img src="/static/img/blog.png" class="blog-img" />
 <div class="container">
-  <div class="Discovery">
+  <div class="bloggy">
     <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea
-      ultrices orci adipiscing non a nec. <br />
-      Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam
-      dignissim eu. Nulla orci lorem in<br />
-      dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci
-      sagittis senectus blandit et leo varius. Amet pretium interdum purus
-      porttitor elit egestas quisque sagittis.
-    </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea
       ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus
@@ -24,17 +12,25 @@
       sagittis senectus blandit et leo varius. Amet pretium interdum purus
       porttitor elit egestas quisque sagittis.
     </p>
-  </div>
-  <div class="horizontal-text my-4">
-    <div class="vertical-line"></div>
-
     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus
+      plateaultrices orci adipiscing non a nec. Id etiam purus sed scelerisque
+      lectuseu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem
+      indignissim at risus. Egestas vivamus lacinia quis diam elementum.
+      Orcisagittis senectus blandit et leo varius. Amet pretium interdum purus
+      porttitor elit egestas quisque sagittis.
+    </p>
+  </div>
+  <div class="horizontal-text my-4" >
+    <div class="vertical-line "></div>
+
+    <p><i>
       A netus platea ultrices A netus platea ultrices orci adipiscing non a nec.
       Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam
       dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus
       lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius.
       Amet pretium interdum purus porttitor elit egestas quisque sagittis.
-    </p>
+    </i></p>
   </div>
   <div class="info">
     <p>
@@ -54,14 +50,22 @@
         <div class="feature-img">
           <img src="/static/img/blog.png" width="100%" />
           <div class="overlay"></div>
-          <img src="/static/img/playbutton -1.png" class="play-btn" onclick="playvideo('/static/img/man.mp4.mp4')" />
+          <img
+            src="/static/img/playbutton -1.png"
+            class="play-btn"
+            onclick="playvideo('/static/img/man.mp4.mp4')"
+          />
         </div>
       </div>
       <div class="col-md-3 col">
         <div class="feature-img">
           <img src="/static/img/blog.png" width="100%" />
           <div class="overlay"></div>
-          <img src="/static/img/playbutton -1.png" class="play-btn" onclick="playvideo('/static/img/man.mp4.mp4')" />
+          <img
+            src="/static/img/playbutton -1.png"
+            class="play-btn"
+            onclick="playvideo('/static/img/man.mp4.mp4')"
+          />
         </div>
       </div>
     </div>
@@ -71,7 +75,11 @@
     <div class="overlay"></div>
     <div class="video">
       <video width="100%" controls id="myvideo"></video>
-      <img src="/static/img/close.png" class="close-btn" onclick="stopvideo()" />
+      <img
+        src="/static/img/close.png"
+        class="close-btn"
+        onclick="stopvideo()"
+      />
     </div>
   </div>
 
