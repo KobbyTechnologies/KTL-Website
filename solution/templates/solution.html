@@ -2,125 +2,127 @@
 {% load static %}
 {% block title %}KTL - Solution {% endblock title %}
 {% block main %}
-
-<section class="solution container">
-    <div class="sl-title">
-        <h1>Our solutions</h1>
-    </div>
-
-    <div class="row justify-content-center sl-items">
-        <div class="col-md-8 col-sm-9">
-            <div class="sl-content">
-                <h5 class="sl-fade">RECENT SOLUTION</h5>
-                <h3>Electronic Documents Management System (EDMS)</h3>
-                <p>At Kobby technologies we offer this solution through standardizing your information management
-                    practices
-                    between department such that there is a seamless flow of information across the organization. We
-                    also
-                    implement EDMS software to support your digital transformation projects.
-                    View Solution
-                    This is the solution title holder
-                    View Solution</p>
-
-                <div class="sl-link">
-                    <a href="{% url 'solution_single' %}">View Solution <span class="la la-angle-right"></span>
-                        <hr>
-                    </a>
-                </div>
-            </div>
+<div class="solution">
+    <section class="container">
+        <div class="sl-title">
+            <h1>Our solutions</h1>
         </div>
-        <div class="col-md-4 col-sm-9 sl-items-image">
 
-        </div>
-    </div>
-</section>
+        <div class="row justify-content-center sl-items">
+            <div class="col-md-8 col-sm-9">
+                <div class="sl-content">
+                    <h5 class="sl-fade">RECENT SOLUTION</h5>
+                    <h3>Electronic Documents Management System (EDMS)</h3>
+                    <p>At Kobby technologies we offer this solution through standardizing your information management
+                        practices
+                        between department such that there is a seamless flow of information across the organization. We
+                        also
+                        implement EDMS software to support your digital transformation projects.
+                        View Solution
+                        This is the solution title holder
+                        View Solution</p>
 
-<section class="container sl-all-solutions">
-    <div class="sl-title">
-        <h1>All solutions</h1>
-    </div>
-
-    <div class="row justify-content-center sl-card">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
+                    <div class="sl-link">
+                        <a href="{% url 'solution_single' %}">View Solution <span class="la la-angle-right"></span>
+                            <hr>
+                        </a>
                     </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
                 </div>
+            </div>
+            <div class="col-md-4 col-sm-9 sl-items-image">
+
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
-                    </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
-                    </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
-                    </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
-                    </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card text-center">
-                <div class="card-body">
-                    <div class="sl-icon">
-                        <img src="{% static 'img/icon-1.png' %}" alt="">
-                    </div>
-                    <p class="card-title">This is the solution title holder</p>
-                    <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
-                </div>
-            </div>
+    </section>
+
+    <section class="container sl-all-solutions">
+        <div class="sl-title">
+            <h1>All solutions</h1>
         </div>
 
-    </div>
+        <div class="row justify-content-center sl-card">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="sl-icon">
+                            <img src="{% static 'img/icon-1.png' %}" alt="">
+                        </div>
+                        <p class="card-title">This is the solution title holder</p>
+                        <a href="{% url 'solution_single' %}" class="btn btn-primary btn-md">View Solution</a>
+                    </div>
+                </div>
+            </div>
 
-
-    <div class="row sl-page container justify-content-center">
-        <div class=" col-lg-2 col-sm-3 col-6 text-center">
-            <a href="" class="btn btn-outline-primary btn-md">Previous</a>
         </div>
-        <div class=" col-lg-2 col-sm-3 col-6 text-center">
-            <a href="" class="btn btn-outline-primary btn-md "> Next</a>
-        </div>
 
-    </div>
-    <hr>
-</section>
+
+        <div class="row sl-page container justify-content-center">
+            <div class=" col-lg-2 col-sm-3 col-6 text-center">
+                <a href="" class="btn btn-outline-primary btn-md">Previous</a>
+            </div>
+            <div class=" col-lg-2 col-sm-3 col-6 text-center">
+                <a href="" class="btn btn-outline-primary btn-md "> Next</a>
+            </div>
+
+        </div>
+        <hr>
+    </section>
+</div>
+
 
 {% endblock main %}

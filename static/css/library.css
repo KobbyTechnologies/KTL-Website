@@ -11,14 +11,29 @@
     padding: 20px 0 ;
 }
 .library .lb-title h1{
+    font-style: normal;
+    font-weight: 700;
     font-size: 30px;
-    color: #FFFFFF;
     line-height: 41px;
+    color: var(--white1);
 }
-
+.lb-stories p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white1);
+}
 .library .btn {
     border-color: #E64143 !important;
     color: #E64143 !important;
+    padding: 19px 40px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
 }
 .library .btn:hover {
     background-color: #E64143 !important;
@@ -28,19 +43,43 @@
 
 
 .library .lb-video-overlay{
-    position: relative;
-    background-color: #000000;
+    position: absolute;
+    background-color: #000000bd;
+    height: 97%;
+    top: 0;
+    left: 0;
+}
+
+.library .lb-video-overlay i{
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    width: 50px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.library .lb-video-overlay i:hover{
+    color: #E64143;
 }
 
 
 
 .story .story-title h1{
     padding: 45px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white1);
 }
 
 .story .story-content p{
     padding: 0 0 30px 0;
-    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white1);
 }
 
 .story .story-content .story-quote p{
@@ -102,13 +141,18 @@
 }
 
 .lb-csr-program h1{
-    font-size: 24px;
-    padding-top: 110px;
-    padding-bottom: 14px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white1);
 }
 
 .lb-csr-program p{
+    font-weight: 400;
     font-size: 18px;
+    line-height: 25px;
+    padding-top: 14px;
+    color: var(--white1);
 }
 
 .lb-program-offer {
@@ -117,20 +161,31 @@
 
 }
 
+.story-title h2 {
+    padding: 45px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height:33px;
+    color: var(--white1);
+}
+.lb-program-offer .story-title h2 {
+    color: #000;
+}
 .lb-program-offer h5 {
     color: #E64143;
 }
 
-/* .lb-program-offers {
-    height: 10em;
 
-} */
 
 .lb-events-title{
     margin: 3.4rem 0;
 }
 .lb-events-title h3{
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
+    line-height: 27px;
+    color: var(--white1);
 }
 
 
@@ -141,7 +196,30 @@
     border-color: #5B5A5A;
     ;
 }
-
+.event-time{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 27px;
+    color: var(--white2);
+}
+.event-caption{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--white1);
+}
+.event-caption .btn{
+    border-radius: 10px;
+    border-color: #E64143 !important;
+    color: #E64143 !important;
+    padding: 14px 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
 .lb-events-title form button .btn{
     width: 100%;
 }
@@ -152,8 +230,6 @@ CSR Details
 ****************************************/
 
 #myCarousel {
-    /* background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%); */
-    /* max-width: 900px; */
     margin: auto
 }
 
@@ -172,11 +248,12 @@ CSR Details
     height: 10px;
     border-radius: 100%;
     margin: 0 10px;
+    
   }
 .carousel-caption {
     position: initial;
     z-index: 10;
-    padding: 5rem 8rem;
+    padding: 0 8rem 5rem;
     color: rgba(78, 77, 77, 0.856);
     text-align: center;
     font-size: 1.2rem;
@@ -220,9 +297,12 @@ CSR Details
     border-radius: 0;
     padding: 20px 0;
 }
+.csr-input:focus{
+    border-bottom: 1px solid var(--red);
+    box-shadow: 0 0 0 0 rgba(49, 131, 253, 0);
+}
 
 .fileInput {
-    /* text-align: right; */
     border-bottom: thin solid #fff;
     padding: 6px 0;
     margin: 3px;
@@ -241,14 +321,21 @@ CSR Details
 .csr-button button{
     background-color:#E64143;
     border: none;
-    margin: 7rem;
+    margin: 7rem 0;
     padding: 0.5em 3em;
     font-size: 18px;
 }
 
-.csr-button button .btn:hover{
+.csr-button button:hover{
     background-color: #00000000;
     border: 1px solid #ffff;
+}
+.csr-button button:focus-visible{
+    outline: none;
+}
+.btn-check:focus+.btn-primary,
+.btn-primary:focus{
+    box-shadow: 0 0 0 0 rgba(49, 131, 253, 0);
 }
 
 
@@ -288,7 +375,6 @@ CSR Details
     .lb-csr .card{
         margin: 0;
         padding: 0;
-        /* width: 250px; */
     }
 
     .lb-csr .card .card-body img {
@@ -303,11 +389,22 @@ CSR Details
         padding: 5px;
         width: 100%;
     }
+
+    .library .lb-video-overlay i{
+        top: 33%;
+        left: 40%;
+        font-size: 35px;
+    }
 }
 
 @media(max-width:768px) {
     i {
         padding: 0.8rem
+    }
+    .library .lb-video-overlay i{
+        top: 25%;
+        left: 33%;
+        font-size: 35px;
     }
 }
 
@@ -315,7 +412,11 @@ CSR Details
     .csr-button button{
         margin: 5rem 1rem;
     }
-   
+    .library .lb-video-overlay i{
+        top: 25%;
+        left: 33%;
+        font-size: 35px;
+    }
 }
 
 

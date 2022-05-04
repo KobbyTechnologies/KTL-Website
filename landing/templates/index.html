@@ -1,33 +1,377 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
-{% include 'navbar.html' %}
-<div class="container">
+
+<section class="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item ">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="fas fa-arrow-left" aria-hidden="true"> </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="fas fa-arrow-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section class="container pt-4 mt-5">
+    <div class="row justify-content-center">
+        <table class="table text-center">
+            <tr>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Clients</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Soutions</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Patners</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+<!-- selected solutions -->
+
+<section class="container-fluid selected-solution pt-5 pb-5 mb-5 mt-5">
     <div class="row">
-        <div class="col-md-12 bg-light" style="height: 700px; width: 100%;">
-            <div class="centerd" style="margin-left: 4rem;">
-                <div class="div mt-5" style="display:inline-block;border-right: 2px solid red;">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50" alt="" srcset="">
-                    <p>We are learning some css</p>
+        <div class="title text-center pb-5 pt-3">
+            <h1>Our Selected solutions</h1>
+        </div>
+        <div class="solution-carousel">
+            <div id="carouselSolutionControls" class="carousel slide solutionCarousel" data-interval="false">
+                <div class="carousel-inner solution-inner">
+                    <div class="carousel-item solution-item active">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="mx-4" style="display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
-                </div>
-                <div class=" div mx-4" style="display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
-                </div>
-                <div class=" div " style=" display:inline-block">
-                    <h5>Start</h5>
-                    <img src="../../static/img/2.png" class="img-fluid" width="50" height="50 alt="" srcset="">
-                    <p>We are learning some css</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolutionControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                    <span class="vsually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSolutionControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-ico" aria-hidden="true">  </span>
+                    <span class="vsually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+
+<!-- clients Portfolio -->
+<section class="container-fluid bg-light pt-5 client-portfolio">
+    <div class="row">
+        <div class="title text-center mb-2">
+            <h1>Client Portfolio </h1>
+        </div>
+        <div class="subtitle text-center pb-5 mb-5">
+            <h2>Below are the clients we have worked with</h2>
+        </div>
+    </div>
+</section>
+<!-- what we've been upto -->
+<section class="container">
+    <div class="container library mb-5 pb-5">
+        <div class="lb-title text-center">
+            <h1>Here’s what we’ve been upto</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- partnership section -->
+
+<section class="container-fluid partnership bg-light pt-5">
+    <div class="container ">
+        <div class="title text-center pt-3">
+            <h1>Partnerships</h1>
+        </div>
+        <div class="partnership-icons row justify-content-center pt-3">
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="partnership-button text-center">
+            <a href="" class="btn">Partner with us</a>
+        </div>
+    </div>
+</section>
+
+<!-- request for discovery -->
+
+<section class="container mt-5 pt-5 mb-5 pb-5">
+    <div class="row request-session">
+        <div class="title text-center mb-3">
+            <h1>Request for discovery session </h1>
+        </div>
+        <div class="subtitle text-center pb-5 mb-5">
+            <h2>Interested in services we offer? Let’s get intouch</h2>
+        </div>
+        <div class="form">
+            <form action="">
+                <form action="" class="mt-5 pt-2 contacts-form">
+                    <div class="row justify-content-center">
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputName" class="form-label"></label>
+                            <input type="text" class="form-control" id="InputName" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputEmail" class="form-label"></label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputNumber" class="form-label"></label>
+                            <input type="Number" class="form-control" id="InputNumber" placeholder="Phone Number" required>  
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputCompany" class="form-label"></label>
+                            <input type="text" class="form-control" id="InputCompany" placeholder="Company" required>
+                        </div>
+
+                    </div>
+                    <div class="request-button text-center pb-5">
+                        <button type="submit" class="btn btn-primary mt-5">Request Session</button>
+                    </div>
+
+                </form>
+            </form>
+        </div>
+    </div>
+</section>
+<style>
+   
+
+   
+</style>
+<hr class="container">
+
+<script>
+    var carouselWidth = $(".solution-inner")[0].scrollWidth;
+    var cardWidth = $(".solution-item").width();
+    var scrollPosition = 0;
+
+    $(".carousel-control-next").on("click", function () {
+        if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
+            scrollPosition += cardWidth;  //update scroll position
+            $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+        }
+    });
+
+    $(".carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $(".carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+            );
+        }
+    });
+
+</script>
 {% endblock %}
+<!--index.html-->

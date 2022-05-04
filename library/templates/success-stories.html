@@ -2,34 +2,36 @@
 {% load static %}
 {% block title %}Success Stories {% endblock title %}
 {% block main %}
-<div class="container library">
+<div class="container library mb-5 pb-5">
     <div class="lb-title">
         <h1>Customer Success Stories</h1>
     </div>
     <div class="row justify-content-center">
-        <div class="col-md-4 lb-stories">
-            <figure class="figure">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+            <div class="figure mb-4">
                 <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
-            </figure>
-            <p>Lorem Ipsum dolor sit amet, consectetur. Lorem Ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
             <a href="" class="btn btn-outline-primary"> Read Story</a>
         </div>
-        <div class="col-md-4 lb-stories">
-            <div class="lb-video">
-
+        <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+            <div class="position-relative figure mb-4">
+                <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                <div class="lb-video-overlay container-fluid">
+                    <span ><i class="fa-solid fa-circle-play"></i></span>
+                </div>
+            </div>
+            <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+            <a href="" class="btn btn-outline-primary"> Watch Story</a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+            <div class="position-relative figure mb-4">
                 <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 <div class="lb-video-overlay container-fluid">
                     <span><i class="fa-solid fa-circle-play"></i></span>
                 </div>
             </div>
-            <p>Lorem Ipsum dolor sit amet, consectetur. Lorem Ipsum dolor sit amet, consectetur.</p>
-            <a href="" class="btn btn-outline-primary"> Watch Story</a>
-        </div>
-        <div class="col-md-4 lb-stories">
-            <figure class="figure">
-                <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
-            </figure>
-            <p>Lorem Ipsum dolor sit amet, consectetur. Lorem Ipsum dolor sit amet, consectetur.</p>
+            <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur.</p>
             <a href="" class="btn btn-outline-primary"> Watch Story</a>
         </div>
     </div>
@@ -38,5 +40,6 @@
     </div>
 
 </div>
+<hr class="container">
 
 {% endblock main %}
