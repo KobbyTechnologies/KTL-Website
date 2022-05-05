@@ -13,9 +13,12 @@
 .btn {
     padding: 16px;
 }
+button:focus-visible,
 .btn:focus-visible{
+    display: none;
     outline: none;
     box-shadow: none;
+    background-color: var(--red);
 
 }
 
@@ -1050,7 +1053,7 @@ video:focus {
 
 }
 
-.blog-item button:hover {
+.blog-item a:hover {
     background-color: var(--red);
     color: var(--white1);
     border: none;

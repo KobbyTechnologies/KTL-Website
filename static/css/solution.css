@@ -66,13 +66,27 @@ solutions section
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    text-align: justify;
 }
 
 .solution .sl-content .sl-link a{
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 11px;
+}
+
+.solution .sl-content .sl-link a,
+.solution .sl-content .sl-link span{
     color: var(--red);
+    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
-    font-weight: bold;
+    line-height: 25px;
     text-decoration: none;
+
+}
+.solution .sl-content .sl-link a:hover{
+    font-size: 22px;
+    
 
 }
 .solution .sl-content .sl-link a hr{
