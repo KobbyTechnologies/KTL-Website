@@ -1,3 +1,4 @@
+
 {% extends 'base.html'%} 
 {% load static %}
 {% block main %}
@@ -58,3 +59,72 @@
   </div>
 </div>
 {%endblock%}
+{% load static %}
+<footer class="container-fluid">
+  <div class="footer-top row  d-flex justify-content-around">
+    <div class="footer-logo footer-info">
+      <img src="{% static 'img/logo-2.png' %}" alt="">
+    </div>
+    <div class="footer-info">
+      <div class="header">
+        <h1>Contact info</h1>
+      </div>
+      <div class="footer-content">
+        <p class="mb-3">Phone: +254 724 856614</p>
+        <p>Email:<a href="mailto:info@kobby.co.ke" class="mb-3"> info@kobby.co.ke</a></p>
+        
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="header">
+        <h1>Address</h1>
+      </div>
+      <div class="footer-content">
+        <p class="mb-3">P.O Box 5824 - 00200 Nairobi, Kenya</p>
+
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="header">
+        <h1>Location</h1>
+      </div>
+      <div class="footer-content">
+        <p class="mb-3">The Mirage , 5th Floor - Suite 4 Westlands</p>
+
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="header">
+        <h1>Navigate </h1>
+      </div>
+      <div class="footer-content">
+        <ul>
+          <li>Home</li>
+          <li>Our Services</li>
+          <li>About Us</li>
+          <li>Our Library</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <hr class="container">
+
+  <div class="footer-middle text-center">
+    <div class="mb-3 social-icons">
+      <span><i class="fa-brands fa-facebook-square"></i></span>
+      <span><i class="fa-brands fa-twitter-square"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></i></span>
+
+    </div>
+  </div>
+  <div class="footer-bottom pb-3">
+    <div class="copyright text-center">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Kobby Technologies Limited. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+>>>>>>> d96f732be71028fe1d7948126c9ba55ff0073f06

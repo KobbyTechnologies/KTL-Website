@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 
-
 def landing(request):
     return render(request, 'index.html')
 
@@ -14,4 +13,7 @@ def footer(request):
 
 def contact(request):
     return render(request, 'contactus.html')
+
+def landing(request):    
+    return render(request, 'index.html')
 
