@@ -23,13 +23,32 @@
       <p>The Mirage, 5th Floor -</p>
       <p>Suite 4 Westlands</p>
     </div>
-    <div class="footer col-md-2">
-      <h4>Navigate</h4>
-      <p>Home</p>
-      <p>Our Sevices</p>
-      <p>About Us</p>
-      <p>Our Library</p>
-      <p>Contact Us</p>
+    <div class="footer-info">
+      <div class="header">
+        <h1>Navigate </h1>
+      </div>
+      <div class="footer-content">
+        <ul>
+          <li><a href="/"> Home</a></li>
+          <li><a href="{% url 'service' %}"> Our Services</a></li>
+          <li><a href="{% url 'about' %}"> About Us</a></li>
+          <li><a href="{% url 'csr' %}"> Our Library</a></li>
+          <li><a href="{% url 'contacts' %}"> Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <hr class="container">
+
+  <div class="footer-middle text-center">
+    <div class="mb-3 social-icons">
+      <span><i class="fa-brands fa-facebook-square"></i></span>
+      <span><i class="fa-brands fa-twitter-square"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></i></span>
+
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def Blog_request(request):
-    return render(request, 'Blog.html')
+def blog_request(request):
+    return render(request, 'blog.html')
 
-def BLOG2_request(request):
-    return render(request, 'Blogdetails.html')    
+def blog_detail_request(request):
+    return render(request, 'blog-details.html')    

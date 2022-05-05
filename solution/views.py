@@ -6,4 +6,4 @@ def solution(request):
 
 
 def solution_view(request):
-    return render(request, 'single_solution.html')
+    return render(request, 'single-solution.html')

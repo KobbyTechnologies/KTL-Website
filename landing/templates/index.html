@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title%} Kobby Technologies Limited {% endblock title%}
 {% block main %}
 {% include 'navbar.html' %}
 
@@ -75,6 +76,7 @@
     </div>
     <div class="client-section">
     <div class="row">
+<<<<<<< HEAD
       <div class="col-md-2">
         <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
       </div>
@@ -117,6 +119,60 @@
         <p>Lorem Ipsum dolor sit amet, consectetur.</p>
         <a href="#" class="btn btn-dark btn-learn" type="button">Learn More</a>
       </div>
+=======
+        <div class="title text-center mb-2">
+            <h1>Client Portfolio </h1>
+        </div>
+        <div class="subtitle text-center pb-5 mb-5">
+            <h2>Below are the clients we have worked with</h2>
+        </div>
+        <div class="portfolio-carousel">
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- what we've been upto -->
+
+<section class="container mt-5 pt-3">
+    <div class="container library mb-5 pb-5">
+        <div class="lb-title text-center">
+            <h1>Here’s what we’ve been upto</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
+                <div class="figure mb-4">
+                    <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+                </div>
+                <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+
+>>>>>>> rebuild
     </div>
 </div>
 <div class="container">

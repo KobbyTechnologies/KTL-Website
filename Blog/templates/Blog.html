@@ -1,103 +1,108 @@
-{% extends 'base.html' %} {% load static %} {% block main %}
-
-<img src="/static/img/blog.png" class="blog-img" />
-<div class="container">
-  <div class="bloggy">
-    <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea
-      ultrices orci adipiscing non a nec. Id etiam purus sed scelerisque lectus
-      eu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem in
-      dignissim at risus. Egestas vivamus lacinia quis diam elementum. Orci
-      sagittis senectus blandit et leo varius. Amet pretium interdum purus
-      porttitor elit egestas quisque sagittis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus
-      plateaultrices orci adipiscing non a nec. Id etiam purus sed scelerisque
-      lectuseu et. Adipiscing ultricies nullam dignissim eu. Nulla orci lorem
-      indignissim at risus. Egestas vivamus lacinia quis diam elementum.
-      Orcisagittis senectus blandit et leo varius. Amet pretium interdum purus
-      porttitor elit egestas quisque sagittis.
-    </p>
-  </div>
-  <div class="horizontal-text my-4" >
-    <div class="vertical-line "></div>
-
-    <p><i>
-      A netus platea ultrices A netus platea ultrices orci adipiscing non a nec.
-      Id etiam purus sed scelerisque lectus eu et. Adipiscing ultricies nullam
-      dignissim eu. Nulla orci lorem in dignissim at risus. Egestas vivamus
-      lacinia quis diam elementum. Orci sagittis senectus blandit et leo varius.
-      Amet pretium interdum purus porttitor elit egestas quisque sagittis.
-    </i></p>
-  </div>
-  <div class="info">
-    <p>
-      A netus platea ultrices orci adipiscing non a nec. Id etiam purus sed
-      scelerisque lectus eu et. Adipiscing ultricies nullam dignissim eu. Nulla
-      orci lorem in dignissim at risus. Egestas vivamus lacinia quis diam
-      elementum. Orci sagittis senectus blandit et leo varius. Amet pretium
-      interdum purus porttitor elit egestas quisque sagittis.
-    </p>
-  </div>
-
-  <!-- research   work on the  video-->
-  <div class="posts">
-    <h5>other blog posts</h5>
-    <div class="row cloud">
-      <div class="col-md-3 col">
-        <div class="feature-img">
-          <img src="/static/img/blog.png" width="100%" />
-          <div class="overlay"></div>
-          <img
-            src="/static/img/playbutton -1.png"
-            class="play-btn"
-            onclick="playvideo('/static/img/man.mp4.mp4')"
-          />
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} Blog {% endblock title %}
+{% block main %}
+<section>
+    <div class="container">
+        <div class="blog-top">
+            <div class="blog-header align-items-center">
+                <div class="title">
+                    <h1>Blog</h1>
+                </div>
+                <div class="subtitle">
+                    <p>Latest News and Articles<br> featuring Kobby Technologies</p>
+                </div>
+            </div>
+            <div class="input-group mb-3 search-box">
+                <input type="text" class="form-control" placeholder="Search Post"
+                    aria-label="Search Post" aria-describedby="button-addon2">
+                <button type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+    
         </div>
-      </div>
-      <div class="col-md-3 col">
-        <div class="feature-img">
-          <img src="/static/img/blog.png" width="100%" />
-          <div class="overlay"></div>
-          <img
-            src="/static/img/playbutton -1.png"
-            class="play-btn"
-            onclick="playvideo('/static/img/man.mp4.mp4')"
-          />
-        </div>
-      </div>
     </div>
-  </div>
-
-  <div class="video-player" id="videoplayer">
+</section>
+<section>
+    <div class="container blog-details">
+        <div class="row">
+            <div class="col-md-4 my-2 blog-item ">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                 <a href="{% url 'singleblog'%}" class="btn blogbtn">learn more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">Read more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">ReAd more</a>
+            </div>
+            <div class="col-md-4 my-2 blog-item">
+                <img src="/static/img/blog.png" class="img-fluid" style="border-radius: 5px;">
+                <h4 class="my-4">Lorem Ipsum dolor sit amet, consectetur.</h4>
+                <a href="{% url 'singleblog'%}"  class="btn blogbtn">REad more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="video-player" id="videoplayer">
     <div class="overlay"></div>
     <div class="video">
-      <video width="100%" controls id="myvideo"></video>
-      <img
-        src="/static/img/close.png"
-        class="close-btn"
-        onclick="stopvideo()"
-      />
+        <video height="" controls id="myvideo"></video>
+        <img src="/static/img/close.png" class="close-btn" onclick="stopvideo()" />
     </div>
-  </div>
-<hr class="container mt-5">
-  <script>
+</div>
+
+<hr class="container">
+
+<script>
     var videoplayer = document.getElementById("videoplayer");
     var myvideo = document.getElementById("myvideo");
 
     function stopvideo() {
-      videoplayer.style.display = "none";
-      myvideo.stop();
+        videoplayer.style.display = "none";
+        myvideo.stop();
     }
 
     function playvideo(file) {
-      myvideo.src = file;
-      myvideo.play();
-      videoplayer.style.display = "grid";
+        myvideo.src = file;
+        myvideo.play();
+        videoplayer.style.display = "grid";
     }
-  </script>
-  
-</div>
+</script>
+
+
+
 {% endblock %}

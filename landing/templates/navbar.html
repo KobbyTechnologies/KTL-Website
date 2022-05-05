@@ -2,6 +2,7 @@
 
  {% extends 'base.html'%} 
 {% load static %}
+<<<<<<< HEAD
 {% block main %}
 <nav class="stroke navbar navbar-expand-lg">
   <div class="container">
@@ -33,6 +34,51 @@
           <a class="nav-link" href="#">Contact us</a>
         </li>
       </ul>
+=======
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav mb-2">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+          <img src="{% static 'img/logo-2.png' %}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              What we do
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="{% url 'service' %}">Services</a></li>
+              <li><a class="dropdown-item" href="{% url 'solution' %}">Solution</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Libray
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="{% url 'blog' %}">Blog</a></li>
+              <li><a class="dropdown-item" href="{% url 'success-stories' %}">Success Stories</a></li>
+              <li><a class="dropdown-item" href="{% url 'events' %}">Events & Webinars</a></li>
+              <li><a class="dropdown-item" href="{% url 'csr' %}">CSR Projects</a></li>
+              <li><a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="{% url 'contacts' %}">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+>>>>>>> rebuild
     </div>
   </div>
 </nav>
