@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title%} Our Services{% endblock title%}
 {% block main %}
 
 <section class="hero">
@@ -10,7 +11,7 @@
   </section>
 <h1 class="Services">Our Services</h1>
 <!--cards-->
-<div class="container">
+<div class="container pb-5 mb-5">
   <div class="row" style="row-gap: 16px">
     <div class="col-md-3">
       <div class="card c-card">
@@ -18,7 +19,7 @@
         <div class="card-body">
           <img src="/static/img/solution-1.png" />
           <h5 class="card-title center-title">Microsoft solution</h5>
-          <a href="#" class="btn btn-primary">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
@@ -28,7 +29,7 @@
           <img src="/static/img/solution-1.png" />
           <h5 class="card-title center-title">Oracle solution</h5>
 
-          <a href="#" class="btn btn-primary">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
@@ -39,7 +40,7 @@
           <img src="/static/img/solution-1.png" />
           <h5 class="card-title center-title">Technical solution consulting</h5>
 
-          <a href="#" class="btn btn-primary">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
@@ -48,16 +49,15 @@
         <div class="card-body">
           <img src="/static/img/solution-1.png" />
           <h5 class="card-title center-title">Outsourced services</h5>
-          <a href="#" class="btn btn-primary">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn btn-primary">learn more</a>
         </div>
       </div>
     </div>
   </div>
-
-  <hr class="axis">
-
-
-  
 </div>
+
+
+<hr class="container">
+
+
 {% endblock %}
-  <!--index.html-->

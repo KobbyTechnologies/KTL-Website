@@ -7,6 +7,6 @@ urlpatterns = [
     path('story', views.story_detail, name='read_more'),
     path('events', views.events, name='events'),
     path('csr', views.csr_view, name='csr'),
-    path('csr-detail', views.csr_detail_view, name='csr-detail'),
+    path('single-csr', views.csr_detail_view, name='singlecsr'),
     path('gallery', views.gallery_view, name='gallery'),
 ]

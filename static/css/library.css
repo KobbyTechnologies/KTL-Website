@@ -297,9 +297,22 @@ CSR Details
     border-radius: 0;
     padding: 20px 0;
 }
-.csr-input:focus{
+.csr-input option{
+    background: var(--white1);
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.csr-input option:hover{
+    /* color: var(--red); */
+    background-color: #E64143;
+}
+.csr-input:focus-visible{
     border-bottom: 1px solid var(--red);
-    box-shadow: 0 0 0 0 rgba(49, 131, 253, 0);
+    color: var(--white1);
+    box-shadow: none;
 }
 
 .fileInput {

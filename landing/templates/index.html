@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title%} Kobby Technologies Limited {% endblock title%}
 {% block main %}
 
 <section class="carousel">
@@ -200,10 +201,18 @@
         <div class="subtitle text-center pb-5 mb-5">
             <h2>Below are the clients we have worked with</h2>
         </div>
+        <div class="portfolio-carousel">
+            
+        </div>
     </div>
 </section>
+
+
+
+
 <!-- what we've been upto -->
-<section class="container">
+
+<section class="container mt-5 pt-3">
     <div class="container library mb-5 pb-5">
         <div class="lb-title text-center">
             <h1>Here’s what we’ve been upto</h1>
@@ -214,7 +223,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="" class="btn btn-outline-primary"> Read Story</a>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
@@ -222,7 +231,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="" class="btn btn-outline-primary"> Read Story</a>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-9 lb-stories">
@@ -230,7 +239,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="" class="btn btn-outline-primary"> Read Story</a>
+                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
         </div>

@@ -154,6 +154,7 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+    padding: 18px 34px;
 }
 .share{
     height: 258px;
@@ -194,7 +195,8 @@
     text-align: center;
     color: #FFFFFF;
     top: 50%; 
-    position: absolute; 
+    position: absolute;
+    padding: 18px 30px; 
 }
 
 #quote-carousel {

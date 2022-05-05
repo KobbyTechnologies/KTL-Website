@@ -1,14 +1,17 @@
-{% extends 'base.html' %} {% load static %} {% block main %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title%} Microsoft Solution {% endblock %}
+{% block main %}
 
-<div class="container">
+<div class="container pt-4 mt-5">
   <div class="row">
     <div class="col-sm-3">
-      <div class="card c-card">
+      <div class="card c-card active">
         <div class="card-body">
           <img src="/static/img/solution-1.png" />
           <h4 class="card-title center-title">Microsoft solution</h4>
 
-          <a href="#" class="btn">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn">learn more</a>
         </div>
       </div>
     </div>
@@ -18,7 +21,7 @@
           <img src="/static/img/solution-1.png" />
           <h4 class="card-title center-title">Oracle solution</h4>
 
-          <a href="#" class="btn">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn">learn more</a>
         </div>
       </div>
     </div>
@@ -28,7 +31,7 @@
           <img src="/static/img/solution-1.png" />
           <h4 class="card-title center-title">Technical solution consulting</h4>
 
-          <a href="#" class="btn">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn">learn more</a>
         </div>
       </div>
     </div>
@@ -38,14 +41,14 @@
           <img src="/static/img/solution-1.png" />
           <h4 class="card-title center-title">Outsourced services</h4>
 
-          <a href="#" class="btn">learn more</a>
+          <a href="{% url 'servicedetails' %}" class="btn">learn more</a>
         </div>
       </div>
     </div>
   </div>
 
   <!--line break and microsoft content-->
-
+<section class="container consult ">
   <div class="row" style="margin-top: 100px">
     <div class="col-md-4 count">
       <hr />
@@ -55,128 +58,149 @@
       <h5>Microsoft Solution Consulting</h5>
       <p>
         As a trusted Microsoft gold partner, we offer complete and integrated
-        solutions in all levels<br />
+        solutions in all levels
         of a business be it small, medium, or large. Our end-to-end Microsoft
-        solutions include licensing, implementation, support,<br />
+        solutions include licensing, implementation, support,
         training, and project management. From our cross functional team which
-        has certified experts that <br />
+        has certified experts that 
         create a unique blend of technical expertise, project experience and
         business knowledge result to real time value.
       </p>
     </div>
   </div>
-  <div class="values mt-5">
-    <div class="heading text-center  ">
-      <h1>Value we offer to your business</h1>
+</section>
+
+  <!-- values -->
+
+  <section class='container'>
+    <div class="values mt-5">
+      <div class="heading text-center  ">
+        <h1>Value we offer to your business</h1>
+      </div>
+
+      <div class="row">
+        <!-- vector  SECTION -->
+        <div class="vector-outer">
+          <div class="vector">
+            <img src="/static/img/badge-1.png" />
+          </div>
+          <h6>Licencing</h6>
+        </div>
+        
+        <div class="vector-outer">
+          <div class="vector">
+            <img src="/static/img/Vector (2).png" />
+           
+          </div>
+          <h6>Implementation</h6>
+        </div>
+        
+        <div class="vector-outer">
+          <div class="vector">
+            <img src="/static/img/support-1.png" />
+            
+          </div>
+          <h6>Support</h6>
+        </div>
+        
+        <div class="vector-outer">
+          <div class="vector">
+            <img src="/static/img/teaching-1.png" />
+            
+          </div>
+          <h6>Training</h6>
+        </div>
+        
+        <div class="vector-outer">
+          <div class="vector" style="border: none;">
+          <img src="/static/img/project-1.png" />
+          
+        </div>
+        <h6>Project Management</h6>
+        </div>
+        
+    
+      </div>
     </div>
-    <div class="row">
-      <!--vector  SECTION--->
-      <div class="vector">
-        <img src="/static/img/badge-1.png" />
-        <h6>badge</h6>
-      </div>
-
-      <div class="vector">
-        <img src="/static/img/Vector (2).png" />
-        <h6>implementation</h6>
-      </div>
-      <div class="vector">
-        <img src="/static/img/support-1.png" />
-        <h6>support</h6>
-      </div>
-      <div class="vector">
-        <img src="/static/img/teaching-1.png" />
-        <h6>training</h6>
-      </div>
-      <div class="vector">
-        <img src="/static/img/project-1.png" />
-        <h6>project management</h6>
-      </div>
-
     </div>
-  </div>
-</div>
+  </section>
+  
 
-<section class=" sl-products text-center mt-4 pt-2">
+<!-- Experience -->
+
+<section class="sl-products text-center mt-4 pt-2 container-fluid">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="experiences">
-          <h5>Experiences</h5>
-        </div>
+      <h4 class="sl-patners-title">Experience</h4>
+      <div class="row justify-content-center">
+          <div class="col-md-2 col-sm-3 col-5 sl-experience">
+              <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-2 col-sm-3 col-5 sl-experience">
+              <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-2 col-sm-3 col-5 sl-experience">
+              <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-2 col-sm-3 col-5 sl-experience">
+              <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="...">
+          </div>
       </div>
-    </div>
-    <div class="row" style="text-align: center;justify-content:center; padding-bottom: 10px ;">
-      <div class="col-6 col-md-2">
-        <div class="white">
-          <img src="/static/img/2.png" />
-        </div>
-      </div>
-  </div>
-
-      <div class="col-6 col-md-2">
-        <div class="white">
-          <img src="/static/img/2.png" />
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="white">
-          <img src="/static/img/2.png" />
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2">
-        <div class="white">
-          <img src="/static/img/2.png" />
-        </div>
-      </div>
-    </div>
   </div>
 </section>
-<div class="container">
-  <!--forms(contact) get in here change on this--->
-  <div class="client">
-    <h5>what our client say about us</h5>
-    <p>
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea
-      ultrices orci adipiscing non a nec.Id etiam purus sed scelerisque lectus
-      eu etc.”
-    </p>
-    <div class="unordered">
-      <ul>
-        <li>John Doe</li>
-      </ul>
-    </div>
-   
+
+<section class="sl-single-items">
+  <div class=" container text-center">
+      <h1>What Our Clients Say About Us</h1>
+      <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. A netus platea ultrices orci adipiscing non a nec.
+          Id etiam purus sed scelerisque lectus eu et.”
+          <br><br>
+          <em> <i class=" la la-square"></i>    
+               John Doe
+          </em>
+      </p>
+
   </div>
-  <div class="Discovery">
-    <h5>Request for discovery session</h5>
-    <p>Interested in services we offer? Lets get intouch</p>
+</section>
+
+<!-- request for discovery -->
+
+<section class="container mt-5 pt-5 mb-5 pb-5">
+  <div class="row request-session">
+      <div class="title text-center mb-3">
+          <h1>Request for discovery session </h1>
+      </div>
+      <div class="subtitle text-center pb-5 mb-5">
+          <h2>Interested in services we offer? Let’s get intouch</h2>
+      </div>
+      <div class="form">
+          <form action="">
+              <form action="" class="mt-5 pt-2 contacts-form">
+                  <div class="row justify-content-center">
+                      <div class="mb-5 col-5 pb-4">
+                          <label for="InputName" class="form-label"></label>
+                          <input type="text" class="form-control" id="InputName" placeholder="Your Name" required>
+                      </div>
+                      <div class="mb-5 col-5 pb-4">
+                          <label for="InputEmail" class="form-label"></label>
+                          <input type="email" class="form-control" id="InputEmail" placeholder="Your Email Address" required>
+                      </div>
+                      <div class="mb-5 col-5 pb-4">
+                          <label for="InputNumber" class="form-label"></label>
+                          <input type="Number" class="form-control" id="InputNumber" placeholder="Phone Number" required>  
+                      </div>
+                      <div class="mb-5 col-5 pb-4">
+                          <label for="InputCompany" class="form-label"></label>
+                          <input type="text" class="form-control" id="InputCompany" placeholder="Company" required>
+                      </div>
+
+                  </div>
+                  <div class="request-button text-center pb-5">
+                      <button type="submit" class="btn btn-primary mt-5">Request Session</button>
+                  </div>
+
+              </form>
+          </form>
+      </div>
   </div>
-
-  <!---form- mt- margin top-->
-  
-    <form class=" g-5 cont-form mt-5 row">
-      <div class="floating-group col-md-6 mt-5">
-        <input type="text" class="form-control floating-input" id="floatingInput" placeholder="Your name" />
-      </div>
-      <div class="floating-group col-md-6 mt-5">
-        <input type="email" class="form-control floating-input" id="floatingInput" placeholder="email address" />
-      </div>
-      <div class="floating-group col-md-6 mt-5">
-        <input type="number" class="form-control floating-input" id="floatingInput" placeholder="phone number" />
-      </div>
-      <div class="floating-group col-md-6 mt-5">
-        <input type="text" class="form-control floating-input" id="floatingInput" placeholder="company" />
-      </div>
-
-      <div class="col-12 d-flex justify-content-center align-items-center mt-5">
-        <button type="submit" class="btn formbtn">Request Session</button>
-      </div>
-    </form>
-  
-
-  <hr class="axis" />
-</div>
+</section>
 {% endblock %}

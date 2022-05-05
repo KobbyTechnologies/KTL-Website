@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'library',
     'services',
     'about',
-    'Blog',
+    'blog',
     'contact',
     
 ]
