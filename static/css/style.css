@@ -82,6 +82,7 @@
     background-color:#E64143;
     border: 1px solid white;
     color: white;
+    margin: 2rem orem 2rem 0rem;
 }
 .formbtn:hover {
     border: 1px solid white;
@@ -255,4 +256,44 @@ hr.new1{
 .card-contact{
     background: #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+}
+.cont{
+    color: white;
+    background-color: rgb(13, 13, 13);
+    border: 0px;
+    font-weight: 400px;
+    font-size: 18px;
+    font-family: nunito;
+    border-bottom: 2px solid white;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.cont-but a{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--white1);
+    background: #E64143;
+    border-radius: 10px;
+    margin: 2rem 0rem 2rem 5rem;
+}
+.us-sect p{
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    color: var(--white1);
+    margin: 2rem 0rem 2rem 2rem;
+}
+.icon{
+    align-content: left;
+    border-radius: 2px;
+    margin: 2rem 4rem 2rem 2rem;
 }

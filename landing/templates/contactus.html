@@ -2,94 +2,30 @@
 {% load static %}
 {% block main %}
 {% include 'navbar.html' %}
-  <div class="container" style="background-color: #000000;">
-    <p style="color: white;font-weight: 700;font-size: 32px;font-family: nunito;margin-left: 40px">Hello, let’s get intouch</p>
+  <div class="container">
+    <div class="us-sect">
+      <p>Hello, let’s get intouch</p>
+    </div>
   <div class="row">
       <div class="col-md-9 mb-md-0 mb-5">
           <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-    <div class="col-md-6">
-      <input
-      type="email"
-      class="form-control floating-input"
-      id="floatingInput"
-      placeholder="Your Name"
-      style="color: white;
-      background-color: rgb(13, 13, 13) !important;
-      border: 0px;
-      font-weight: 400px;
-      font-size: 18px;
-      font-family: nunito;
-      border-bottom: 2px solid white;
-      outline: none;
-      box-shadow: none;
-      margin-bottom: 40px;
-      margin-left: 40px"
-    />
+    <div class="cont col-md-6">
+      <input type="email" class="form-control floating-input" id="floatingInput" placeholder="Your Name"/>
   </div>
-    <div class="col-md-6">
-      <input
-        type="email"
-        class="form-control floating-input"
-        id="floatingInput"
-        placeholder="Your Email address"
-        style="color: white;
-      background-color: rgb(13, 13, 13) !important;
-      border: 0px;
-      border-bottom: 2px solid white;
-      outline: none;
-      box-shadow: none;
-      font-weight: 400px;
-      font-size: 18px;
-      font-family: nunito;
-      margin-bottom: 40px;
-      margin-left: 40px"
-      />
+    <div class="cont col-md-6">
+      <input type="email" class="form-control floating-input" id="floatingInput" placeholder="Your Email address"/>
     </div>
-    <div class="col-md-6">
-      <input
-      type="text"
-      class="form-control floating-input"
-      id="floatingInput"
-      placeholder="Phone Number"
-      style="color: white;
-      background-color: rgb(13, 13, 13) !important;
-      border: 0px;
-      border-bottom: 2px solid white;
-      outline: none;
-      box-shadow: none;
-      font-weight: 400px;
-      font-size: 18px;
-      font-family: nunito;
-      margin-bottom: 40px;
-      margin-left: 40px"
-    />
+    <div class="cont col-md-6">
+      <input type="text" class="form-control floating-input" id="floatingInput" placeholder="Phone Number"/>
   </div>
-  <div class="">
-    <div class="col-md-6">
-      <input
-      type="text"
-      class="form-control floating-input"
-      id="floatingInput"
-      placeholder="Message"
-      style="color: white;
-      background-color: rgb(13, 13, 13);
-      border: 0px;
-      border-bottom: 2px solid white;
-      outline: none;
-      box-shadow: none;
-      font-weight: 400px;
-      font-size: 18px;
-      font-family: nunito;
-      margin-bottom: 40px;
-      margin-left: 40px;"
-    />
+    <div class="cont col-md-6">
+      <input type="text" class="form-control floating-input" id="floatingInput" placeholder="Message"/>
   </div>
-</div>
 </div>
 </form>
+<div class="cont-but">
 <div class="align-center">
-  <a href="#" class="btn btn-danger btn-learn" type="button">Submit</a>
-</div>
+  <a href="#" class="btn btn-danger" type="button">Submit</a>
 </div>
 </div>
 <div class="container">
@@ -100,6 +36,17 @@
     <p>info@kobby.co.ke</p>
     <h4><b>Visit Us </b></h4>
     <p>The Mirage , 5th Floor - Suite 4 Westlands</p>
+    <div class="row">
+      <div class="icon col-md-1">
+      <img src="../../static/img/Vector (5).png" class="img-fluid" alt="">
+    </div>
+    <div class="icon col-md-1">
+      <img src="../../static/img/Vector (6).png" alt="">
+    </div>
+    <div class="icon col-md-1">
+      <img src="../../static/img/Vector (7).png" alt="">
+    </div>
+    </div>
     </div>
   </div>
 </div>
