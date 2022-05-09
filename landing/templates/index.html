@@ -2,133 +2,254 @@
 {% load static %}
 {% block title%} Kobby Technologies Limited {% endblock title%}
 {% block main %}
-{% include 'navbar.html' %}
 
-<div class="container">
-  <div class="row">
-  <div class="col-md-6">
-    <div class="hero-section">
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor viverra tellus nunc.</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Turpis gravida ipsum sit semper ornare morbi non feugiat.</p>
-    <a href="#" class="btn btn-danger btn-learn" type="button">Learn More</a>
+<section class="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item ">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-home">
+                    <div class="carousel-home-content">
+                        <div class="container-fluid row justify-content-center align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-caption text-left ">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis gravida
+                                    ipsum sit
+                                    semper ornare morbi non feugiat. Porttitor viverra tellus nunc .</p>
+                                <a href="#" class="btn btn-primary mt-5 ">Learn More</a>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-11 col-12 carousel-home-image">
+                                <img src="{% static 'img/hero-img-1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="fas fa-arrow-left" aria-hidden="true"> </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="fas fa-arrow-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-  </div>
-  <div class="col-sm-6">
-    <img src="../../static/img/hero img 1.png" class="img-fluid" style="margin-bottom: 60px;margin-top: 40px;" alt="">
-  </div>
-  </div>
-</div>
-<section>
-<div class=" w3-section text-center text-white">
-  <div class="row">
-     <div class="col-md-2">
-    <span class="w3-xlarge">50+ </span><br>
-    CLIENTS 
-  </div>
-  <div class="col-md-2">
-    <span class="w3-xlarge">50+ </span><br>
-    SOLUTIONS 
-  </div>
-  <div class="col-md-2">
-    <span class="w3-xlarge">50+</span><br>
-    PATNERS 
-  </div>
-</div>
-  </div>
 </section>
-<section>
-  <div class="text-center">
-    <h4>Our  Selected solution</h4>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="slider mx-auto text-center">
-          <img src="../../static/img/pexels-hasan-albari-1229861 2.png" class="img-fluid" alt="">
-          <div class="p-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="slider mx-auto text-center">
-          <img src="../../static/img/pexels-hasan-albari-1229861 2.png" class="img-fluid" alt="">
-          <div class="p-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="slider mx-auto text-center">
-          <img src="../../static/img/pexels-hasan-albari-1229861 2.png" class="img-fluid" alt="">
-          <div class="p-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          </div>
-        </div>
-      </div>
+<section class="container pt-4 mt-5">
+    <div class="row justify-content-center">
+        <table class="table text-center">
+            <tr>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Clients</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Soutions</p>
+                    </div>
+                </td>
+                <td scope="col">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Patners</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
-  </div>
+
 </section>
-<div class="container bg-light ">
-    <div class="text-white">
-      <h4>Client Portfolio</h4>
-      <p>Below are the clients we have worked with</p>
-    </div>
-    <div class="client-section">
+
+<!-- selected solutions -->
+
+<section class="container-fluid selected-solution pt-5 pb-5 mb-5 mt-5">
     <div class="row">
-<<<<<<< HEAD
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-      </div>
+        <div class="title text-center pb-5 pt-3">
+            <h1>Our Selected solutions</h1>
+        </div>
+        <div class="solution-carousel">
+            <div id="carouselSolutionControls" class="carousel slide solutionCarousel" data-interval="false">
+                <div class="carousel-inner solution-inner">
+                    <div class="carousel-item solution-item active">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item solution-item">
+                        <div class="position-relative">
+                            <img src="{% static 'img/hero-img-2.png' %}" class="" alt="...">
+                            <div class="content-solution-overlay container-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolutionControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                    <span class="vsually-hidden">Prev</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSolutionControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                    <span class="vsually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-</div>
-<div class="container">
-  <div class="text-center">
-    <h4>Here's what we've been upto</h4>
-  </div>
+</section>
+
+
+<!-- clients Portfolio -->
+<section class="container-fluid bg-light pt-5 client-portfolio">
     <div class="row">
-      <div class="upto col-md-4">
-        <img src="../../static/img/pexels-julia-m-cameron-4144179 4.png" alt="">
-        <p>Lorem Ipsum dolor sit amet, consectetur.</p>
-        <a href="#" class="btn btn-dark btn-learn" type="button">Learn More</a>
-      </div>
-      <div class="upto col-md-4">
-        <img src="../../static/img/pexels-julia-m-cameron-4144179 4.png" alt="">
-        <p>Lorem Ipsum dolor sit amet, consectetur.</p>
-        <a href="#" class="btn btn-dark btn-learn" type="button">Learn More</a>
-      </div>
-      <div class="upto col-md-4">
-        <img src="../../static/img/pexels-julia-m-cameron-4144179 4.png" alt="">
-        <p>Lorem Ipsum dolor sit amet, consectetur.</p>
-        <a href="#" class="btn btn-dark btn-learn" type="button">Learn More</a>
-      </div>
-=======
         <div class="title text-center mb-2">
             <h1>Client Portfolio </h1>
         </div>
-        <div class="subtitle text-center pb-5 mb-5">
+        <div class="subtitle text-center pb-5">
             <h2>Below are the clients we have worked with</h2>
         </div>
-        <div class="portfolio-carousel">
-            
+
+
+        <div class="portfolio-carousel pb-5">
+
+            <div id="carouselportfolioControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner portfolio-inner">
+                    <div class="carousel-item portfolio-item active">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+                    <div class="carousel-item portfolio-item ">
+                        <img src="{% static 'img/logo.png' %}" class="" alt="...">
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselportfolioControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                    <span class="visually-hidden">Prev</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselportfolioControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+    </div>
     </div>
 </section>
 
@@ -172,138 +293,176 @@
 
         </div>
 
->>>>>>> rebuild
     </div>
-</div>
-<div class="container">
-  <div class="container-fluid bg-light">
-  <div class="partners">
-    <div class="text-white">
-      <h4>Partnerships</h4>
-    </div>
-      <div class="row">
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="im-cent">
-            <img src="../../static/img/KTL Logo Transparent Background (1) 13.png" alt="">
-          </div>
-        </div>
-        <div class="align-center text-center">
-          <a href="#" class="btn btn-danger" type="button">Partner with us</a>
-      </div>
-    </div>
-    </div>
-    </div>
-</div>
-<div class="container-fluid">
-  <div class="text-center">
-    <h4>Request for a discovery session</h4>
-    <p>Interested in services we offer? Let's get intouch</p>
-  </div>
-<div class="container cont-form mt-5">
-  <form class="row g-3 d-flex justify-content-between align-items-center">
-    <div class="floating-group col-md-5 mt-5">
-      <input type="text" class="form-control floating-input" id="floatingInput" placeholder="Your name"/>
-    </div>
-    <div class="floating-group col-md-5 mt-5">
-      <input type="email" class="form-control floating-input" id="floatingInput" placeholder="email address"/>
-    </div>
-    <div class="floating-group col-md-5 mt-5">
-      <input type="number" class="form-control floating-input" id="floatingInput" placeholder="phone number"/>
-    </div>
-    <div class="floating-group col-md-5 mt-5">
-      <input type="text" class="form-control floating-input" id="floatingInput" placeholder="company"/>
-    </div>
-    <div class="request text-center">
-      <a href="#" class="btn btn-danger" type="button">Request Session</a>
-    </div>
-  </div> 
-  </form>
-</div>
-{% include 'footer.html' %}
-{% endblock %}
+</section>
 
+
+<!-- partnership section -->
+
+<section class="container-fluid partnership bg-light pt-5">
+    <div class="container ">
+        <div class="title text-center pt-3">
+            <h1>Partnerships</h1>
+        </div>
+        <div class="partnership-icons row justify-content-center pt-3">
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+            <div class="icons">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="partnership-button text-center">
+            <a href="" class="btn">Partner with us</a>
+        </div>
+    </div>
+</section>
+
+<!-- request for discovery -->
+
+<section class="container mt-5 pt-5 mb-5 pb-5">
+    <div class="row request-session">
+        <div class="title text-center mb-3">
+            <h1>Request for discovery session </h1>
+        </div>
+        <div class="subtitle text-center pb-5 mb-5">
+            <h2>Interested in services we offer? Let’s get intouch</h2>
+        </div>
+        <div class="form">
+            <form action="">
+                <form action="" class="mt-5 pt-2 contacts-form">
+                    <div class="row justify-content-center">
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputName" class="form-label"></label>
+                            <input type="text" class="form-control" id="InputName" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputEmail" class="form-label"></label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="Your Email Address"
+                                required>
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputNumber" class="form-label"></label>
+                            <input type="Number" class="form-control" id="InputNumber" placeholder="Phone Number"
+                                required>
+                        </div>
+                        <div class="mb-5 col-5 pb-4">
+                            <label for="InputCompany" class="form-label"></label>
+                            <input type="text" class="form-control" id="InputCompany" placeholder="Company" required>
+                        </div>
+
+                    </div>
+                    <div class="request-button text-center pb-5">
+                        <button type="submit" class="btn btn-primary mt-5">Request Session</button>
+                    </div>
+
+                </form>
+            </form>
+        </div>
+    </div>
+</section>
+<style>
+
+
+
+</style>
+<hr class="container">
+
+<script>
+    // var carouselWidth = $(".solution-inner")[0].scrollWidth;
+    // var cardWidth = $(".solution-item").width();
+    // var scrollPosition = 0;
+
+    // $(".carousel-control-next").on("click", function () {
+    //     if (scrollPosition < (carouselWidth - cardWidth * 1)) { //check if you can go any further
+    //         scrollPosition += cardWidth;  //update scroll position
+    //         $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+    //     }
+    // });
+
+    // $(".carousel-control-prev").on("click", function () {
+    //     if (scrollPosition > 0) {
+    //         scrollPosition -= cardWidth;
+    //         $(".carousel-inner").animate(
+    //             { scrollLeft: scrollPosition },
+    //             600
+    //         );
+    //     }
+    // });
+
+
+
+    var multipleCardCarousel = document.querySelector("#carouselSolutionControls");
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+
+        var carouselWidth = $(".solution-inner")[0].scrollWidth;
+        var cardWidth = $(".solution-item").width();
+        var scrollPosition = 0;
+        $("#carouselSolutionControls .carousel-control-next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+                scrollPosition += cardWidth;
+                $("#carouselSolutionControls .solution-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+        
+        $("#carouselSolutionControls .carousel-control-prev").on("click", function () {
+            if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#carouselSolutionControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+    } else {
+        $(multipleCardCarousel).addClass("slide");
+    }
+</script>
+{% endblock %}
+<!--index.html-->

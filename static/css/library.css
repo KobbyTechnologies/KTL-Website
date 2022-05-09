@@ -296,6 +296,10 @@ CSR Details
     border-bottom: 1px solid white;
     border-radius: 0;
     padding: 20px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
 }
 .csr-input option{
     background: var(--white1);
@@ -314,8 +318,11 @@ CSR Details
     color: var(--white1);
     box-shadow: none;
 }
+.form-select{
+    
+}
 
-.fileInput {
+.fileInput{
     border-bottom: thin solid #fff;
     padding: 6px 0;
     margin: 3px;
@@ -332,11 +339,14 @@ CSR Details
 }
 
 .csr-button button{
-    background-color:#E64143;
+    background-color: #E64143;
     border: none;
-    margin: 7rem 0;
-    padding: 0.5em 3em;
+    margin: 80px 0;
+    padding: 18px 56px;
     font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
 }
 
 .csr-button button:hover{

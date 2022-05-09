@@ -417,6 +417,7 @@ table tr th:last-child {
     margin: 0 150px;
     top: 110%;
     transform: translateY(-50%);
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -445,6 +446,22 @@ table tr th:last-child {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+}
+
+.portfolio-item {
+    margin-left: 70px;
+}
+
+@media (min-width: 768px) {
+    .portfolio-inner {
+        display: inline-flex;
+    }
+
+    .portfolio-item {
+        margin-right: 0;
+        flex: 0 0 10% auto;
+        display: block;
+    }
 }
 
 
