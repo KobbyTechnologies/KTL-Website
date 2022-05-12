@@ -225,6 +225,10 @@ Single solutions section
     padding: 0 ;
     
 }
+.sl-single-items .sl-product-list p ::before{
+    content: \2022;
+    
+}
 
 .sl-single-items .sl-product-list ul{
     text-decoration: none;
