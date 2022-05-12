@@ -290,7 +290,7 @@ CSR Details
     margin: 5rem 0;
 }
 
-.csr-input{
+/* .csr-input{
     background: none;
     border: 0;
     border-bottom: 1px solid white;
@@ -300,14 +300,62 @@ CSR Details
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
+} */
+
+.lb-csr-program select{
+    appearance: none;
+    outline: 0;
+    background: none;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    color: var(--white1);
+    cursor: pointer;
+    border: 0;
+    border-bottom: 1px solid var(--white1);
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px;
 }
-.csr-input option{
-    background: var(--white1);
-    color: #000;
+.lb-csr-program .select {
+    position: relative;
+    display: block;
+    line-height: 3;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.lb-csr-program .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: none;
+    pointer-events: none;
+    color: #FFF;
+}
+.lb-csr-program .select:hover::after {
+    color: var(--red);
+}
+.lb-csr-program .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+.lb-csr-program select option{
+    background: #00000000;
+    color: #0e0e0e;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 32px;
+    padding: 10px;
+    white-space: nowrap;
+    min-height: 3rem;
 }
 .csr-input option:hover{
     /* color: var(--red); */
@@ -318,9 +366,7 @@ CSR Details
     color: var(--white1);
     box-shadow: none;
 }
-.form-select{
-    
-}
+
 
 .fileInput{
     border-bottom: thin solid #fff;
@@ -330,6 +376,7 @@ CSR Details
 .fileInput input{
     display: none;
 }
+
 .fileInput label{
     cursor: pointer;
     width: 100%;
@@ -369,6 +416,13 @@ CSR Details
 .gallery.library .btn {
     border-color: #ffffff !important;
     color: #ffffff !important;
+}
+.gallery .lb-events .lb-events-title h1{
+    font-size: 32px;
+    font-style: normal;
+    color: white;
+    font-weight: 700;
+    line-height: 44px;
 }
 
 @media(max-width: 1200px){
