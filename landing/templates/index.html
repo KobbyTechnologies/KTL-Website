@@ -269,7 +269,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-12 lb-stories">
@@ -277,7 +277,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-12 lb-stories">
@@ -285,7 +285,7 @@
                     <img src="{% static 'img/library.jpg' %}" class="figure-img img-fluid rounded" alt="...">
                 </div>
                 <p class="mb-4">Lorem Ipsum dolor sit amet, consectetur. </p>
-                <a href="{% url 'singleblog' %}" class="btn btn-outline-primary"> Read Story</a>
+                <a href="" class="btn btn-outline-primary"> Read Story</a>
             </div>
 
         </div>
@@ -444,18 +444,20 @@
         $("#carouselSolutionControls .carousel-control-next").on("click", function () {
             if (scrollPosition < carouselWidth - cardWidth * 4) {
                 scrollPosition += cardWidth;
-                $("#carouselSolutionControls .solution-inner").animate(
-                    { scrollLeft: scrollPosition },
+                $("#carouselSolutionControls .solution-inner").animate({
+                        scrollLeft: scrollPosition
+                    },
                     600
                 );
             }
         });
-        
+
         $("#carouselSolutionControls .carousel-control-prev").on("click", function () {
             if (scrollPosition > 0) {
                 scrollPosition -= cardWidth;
-                $("#carouselSolutionControls .carousel-inner").animate(
-                    { scrollLeft: scrollPosition },
+                $("#carouselSolutionControls .carousel-inner").animate({
+                        scrollLeft: scrollPosition
+                    },
                     600
                 );
             }

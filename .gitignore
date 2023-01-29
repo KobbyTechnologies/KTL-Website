@@ -4,3 +4,4 @@ virtual/
 pipfile
 pipfile.lock
 .vscode
+venv/
