@@ -1,0 +1,292 @@
+:root {
+    --font1: 'Nunito', sans-serif;
+    --white1:#FFFFFF;
+    --white2:#C4C4C4;
+    --black: #000;
+    --red: #E64143;
+    --black2: #0D0D0D;
+
+}
+
+/*================ 
+solutions section
+===================*/
+
+.solution { 
+    margin: auto;
+    overflow: hidden;
+    color: white;
+}
+.solution .sl-items{
+    background-color: var(--white1);
+    color: var(--black);
+
+}
+.solution .sl-items .sl-items-image{
+    background: url("../img/solution.af68e66a5f87.jpg") center no-repeat;
+    background-size: cover;
+
+}
+.solution .sl-content{
+    margin: 40px;
+}
+.solution .sl-image img{
+    
+    width: auto;
+    height:100;
+    margin:  auto; 
+}
+.sl-title h1{
+    margin: 39px 0 39px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white1);
+}
+.solution .sl-fade{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color:  #A2A2A3;
+    margin: 39px 0 27px 0;
+}
+.solution .sl-content h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    padding: 1.5rem  7rem 1.5rem 0;
+}
+
+.solution .sl-content p{
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.solution .sl-content .sl-link a{
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 11px;
+}
+
+.solution .sl-content .sl-link a,
+.solution .sl-content .sl-link span{
+    color: var(--red);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+
+}
+.solution .sl-content .sl-link a:hover{
+    font-size: 22px;
+    
+
+}
+.solution .sl-content .sl-link a hr{
+   font-weight: bold;
+   width: 20%;
+   height: 2px;
+   color: var(--red);
+}
+
+
+.sl-all-solutions{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.sl-all-solutions .card{
+    color: var(--black2);
+    margin: 39px 0 0 0;
+    
+    
+}
+
+.sl-all-solutions .card .card-title{
+    margin: auto;
+    padding: 2.5rem;
+    color: var(--black2);
+    font-weight: bold;
+    font-Size: 18px;
+    Line-height:32.74px;
+    
+    
+}
+
+.sl-card{
+    padding: 0 6.5rem;
+}
+
+.sl-all-solutions .sl-card .btn{
+    background-color: var(--red);
+    border-radius: 10px;
+    border: var(--red);
+    margin: auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+.sl-all-solutions  .btn a{
+    margin: 1rem;
+}
+
+.sl-page{
+    text-align: center;
+}
+
+
+.sl-page .btn{
+    color: var(--white1);
+    border-color: var(--white1);
+    margin: 40px 0;
+    width: 100%;
+}
+.sl-page .btn:hover{
+    background-color: var(--red);
+    border:0 ;
+}
+.sl-icon img{
+    padding: 2rem;
+}
+/* =====================
+end of solutions section 
+========================*/
+
+/*======================== 
+Single solutions section 
+==========================*/
+
+.sl-title-single{
+    background: url("../img/solution.af68e66a5f87.jpg") center center no-repeat ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.sl-title-single-bg{
+    background-color: rgb(13, 13, 13, 0.5);
+    height: 100vh;
+}
+
+.sl-title-single h1{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--white1);
+}
+
+
+.sl-single-items{
+    margin: 50px;
+    color: var(--white1);
+}
+
+.sl-single-items h1{
+    margin: 50px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sl-single-items p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    padding: 0 13rem;
+}
+
+.sl-single-items h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #A2A2A3;
+}
+
+.sl-single-items .sl-product-list p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 ;
+    
+}
+.sl-single-items .sl-product-list p ::before{
+    content: \2022;
+    
+}
+
+.sl-single-items .sl-product-list ul{
+    text-decoration: none;
+    
+}
+
+.sl-products{
+    color: (--black2);
+    background-color: var(--white1);
+    padding: 50px 0;
+}
+
+.sl-patners, .sl-experience {
+    padding: 1rem;
+}
+
+.sl-patners-title, .sl-experience-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    padding: 1em 0;
+}
+
+/*===============================
+ end of single solutions section 
+ ================================*/
+
+
+@media(max-width:992px) {
+    .sl-single-items p {
+        padding: 0;
+    }
+    
+}
+
+@media(max-width:767px) {
+    .sl-card {
+        padding: 1rem;
+    }
+    .solution .sl-items .sl-items-image {
+        height: 30vh;
+        width: 100%;
+    }
+    .sl-single-items {
+        margin: 50px 0;
+    }
+}
+
+@media(max-width:576px) {
+    .solution .sl-content {
+        margin: 2rem;
+    }
+    .solution .sl-content h3 {
+        padding: 0;
+    }
+    .sl-page .btn {
+        margin: 20px 0;
+    }
+}
+

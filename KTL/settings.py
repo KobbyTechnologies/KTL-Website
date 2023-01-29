@@ -9,12 +9,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
+ALLOWED_HOSTS = ['.localhost','.127.0.0.1']
 
 # SECURITY WARNING: don't run with debug turned on in production
 
-# development
-if config('MODE')=="dev":
-   DATABASES = {
+DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
            'NAME': config('DB_NAME'),
@@ -22,22 +21,8 @@ if config('MODE')=="dev":
            'PASSWORD': config('DB_PASSWORD'),
            'HOST': config('DB_HOST'),
            'PORT': '',
-       }
-       
-   }
-# production
-else:
-   DATABASES = {
-       'default': dj_database_url.config(
-           default=config('DATABASE_URL')
-       )
-   }
-
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
-
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-DEBUG = True
+       }     
+}
 
 
 # Application definition
@@ -56,6 +41,7 @@ INSTALLED_APPS = [
     'about',
     'Blog',
     'contact',
+    'base',
 
 ]
 

@@ -1,0 +1,13 @@
+.btnGhost {
+    background: yellow;
+}
+.test{
+    background: yellow;
+    margin-top: 2rem;
+    border: 2px solid red;
+}
+#testIMg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
