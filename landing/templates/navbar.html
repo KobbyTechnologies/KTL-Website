@@ -1,52 +1,41 @@
 {% load static %}
 {% block main %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-nav mb-2 ">
+<header id="header" class="fixed-top header-transparent">
   <div class="container">
-    <a class="navbar-brand" href="/">
-      <img src="{% static 'img/logo-2.png' %}" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto  text-left">
-        <li class="nav-item">
-          <a class="nav-link mx-2 active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            What we do
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'service' %}">Services</a></li>
-            <li><a class="dropdown-item" href="{% url 'solution' %}">Solution</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="{% url 'about' %}">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Our Libray
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'success-stories' %}">Success Stories</a></li>
-            <li><a class="dropdown-item" href="{% url 'events' %}">Events & Webinars</a></li>
-            <li><a class="dropdown-item" href="{% url 'csr' %}">CSR Projects</a></li>
-            <li><a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="{% url 'contacts' %}">Contact Us</a>
-        </li>
-      </ul>
+    <div class="logo float-right">
+      <h1 class="text-light logo-text"><a href="#"><span>KTL</span></a></h1>
+      <div class="logo-brand">
+        <img src="../../static/img/logo/2.png" class="img-responsive" alt="" srcset="">
+      </div>
     </div>
+    <nav class="nav-menu float-right d-none d-lg-block">
+      <ul>
+        <!-- <li class="active"><a href="index.html"></a></li> -->
+        <li class="drop-down"><a href="">Services and Solutions</a>
+          <ul>
+            <li><a href="#">Enterprise Applications</a></li>
+            <li><a href="#">Data Centre</a></li>
+            <li><a href="#">Enterprise Security</a></li>
+            <li><a href="#">Office Automation</a></li>
+          </ul>
+        </li>
+        <li class="drop-down"><a href="">Our Library</a>
+          <ul>
+            <li class="drop-down"><a href="#">Case Studies</a>
+              <ul>
+                <li><a href="#">Success Stories</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Events & Webinars</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
   </div>
-  </div>
-</nav>
-
+</header>
 {%endblock%}
